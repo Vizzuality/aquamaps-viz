@@ -1,0 +1,813 @@
+/* main container styles */
+
+#wrapper {
+	position: relative;
+	z-index: 5000;
+	overflow: hidden;
+	&:after {
+		position: fixed;
+		left: 0;
+		z-index: 5000;
+		top: 0;
+		right: 0;
+		content: "";
+		border: 7px solid $body-bg;
+		z-index: 60;
+		height: 100%;
+		@include media('>=screen-sm') {
+			border-width: 10px;
+		}
+		@include media('>=screen-md') {
+			border-width: 15px;
+		}
+		@include media('>=screen-lg') {
+			border-width: 20px;
+		}
+	}
+}
+
+/* page logo styles */
+
+.logo {
+	@include absolute(20px, 50%);
+	transform: translate(-50%, 0);
+	z-index: 100;
+	font: $bold 40px/46px $font-family-serif;
+	max-width: 280px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 80% !important;
+	@include media('>=screen-sm') {
+		@include fontsize(75, 86);
+		transform: translate(-50%, -50%);
+		top: 50%;
+		max-width: 70% !important;
+	}
+	@include media('>=screen-lg') {
+		@include fontsize(100, 120);
+	}
+	a {
+		color: $white;
+	}
+}
+
+/* social networks styles */
+
+.social-networks {
+	@extend %listreset;
+	position: fixed;
+	bottom: 20px;
+	left: 10px;
+	width: 30px;
+	max-height: 70%;
+	overflow: hidden;
+	z-index: 200;
+	@include media('>=screen-sm') {
+		left: 20px;
+		bottom: 40px;
+	}
+	@include media('>=screen-md') {
+		left: 30px;
+	}
+	@include media('>=screen-lg') {
+		bottom: 50px;
+		left: 35px;
+	}
+	@include media('>=screen-lgx') {
+		bottom: 61px;
+		left: 52px;
+	}
+	&.inverse {
+		li a {
+			color: $brand-primary;
+			&:hover,
+			&:focus {
+				color: lighten($brand-primary, 10%);
+			}
+		}
+	}
+	li {
+		overflow: hidden;
+		margin: 0 0 20px;
+		@include media('>=screen-sm') {
+			margin: 0 0 28px;
+		}
+		@include media('>=screen-md') {
+			margin: 0 0 39px;
+		}
+		&:last-child {
+			margin: 0;
+		}
+		a {
+			@include text-hide;
+			display: block;
+			color: $white;
+			&:before {
+				@include fontsize(15, 15);
+				display: block;
+				@include media('>=screen-sm') {
+					@include fontsize(16, 16);
+				}
+			}
+			&.icon-email:before {
+				@include fontsize(10, 10);
+				@include media('>=screen-sm') {
+					@include fontsize(11, 11);
+				}
+			}
+			&.icon-twitter:before {
+				@include fontsize(12, 12);
+				@include media('>=screen-sm') {
+					@include fontsize(13, 13);
+				}
+			}
+			&.icon-eubon:before {
+				@include fontsize(60, 62);
+				@include media('>=screen-sm') {
+					@include fontsize(81, 83);
+				}
+			}
+			&:hover,
+			&:focus {
+				color: darken($white, 20%);
+			}
+		}
+	}
+}
+
+/* main informative part styles */
+
+#main {
+	position: relative;
+}
+
+/* header styles, page logo styles */
+
+.header {
+	@include absolute(7px, 7px, 7px);
+	padding: 11px 0;
+	z-index: 300;
+	transition: .25s ease-in-out;
+	transition-property: top, padding;
+	@include media('>=screen-sm') {
+		top: 10px;
+		left: 10px;
+		right: 10px;
+	}
+	@include media('>=screen-md') {
+		top: 15px;
+		left: 15px;
+		right: 15px;
+		padding: 18px 0;
+	}
+	@include media('>=screen-lg') {
+		top: 20px;
+		left: 20px;
+		right: 20px;
+	}
+	&.fixed-position {
+		padding: 13px 0 15px;
+		@include media('>=screen-md') {
+			padding: 25px 0 15px;
+		}
+	}
+	.logo {
+		@include inline(top);
+		@include fontsize(22, 26);
+		position: static;
+		transform: none;
+		@include media('>=screen-md') {
+			@include fontsize(33, 38);
+		}
+		&.inverse a {
+			color: $brand-primary;
+		}
+	}
+}
+
+/* section styles, section content styles, section bg styles, btn heatmaps styles, btn go styles, paging styles, indicators info styles,  article styles, graph styles  */
+
+.section {
+	@include v-align;
+	min-height: 100vh;
+	position: relative;
+	color: $white;
+	&:after {
+		min-height: inherit;
+	}
+	.section-holder {
+		@include inline;
+		width: 100%;
+		padding: 60px 7px 50px 35px;
+		position: relative;
+		z-index: 70;
+		@include media('>=screen-xs') {
+			padding-right: 35px;
+		}
+		@include media('>=screen-sm') {
+			padding: 80px 35px;
+		}
+		@include media('>=screen-lg') {
+			padding: 110px 48px;
+		}
+	}
+	.bg-holder {
+		@include absolute(0, 0, 0, 0);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		img {
+			height: auto;
+			position: absolute;
+			width: auto;
+		}
+	}
+	.fallback-class {
+		background-attachment: scroll;
+		background-size: cover !important;
+		background-position: 50% 50% !important;
+		background: none;
+		img {
+			display: none;
+		}
+	}
+	.btn-heatmaps {
+		@include size(97px, 138px);
+		@include absolute(50%, auto, 0);
+		@include fontsize(14, 18);
+		@include v-align;
+		z-index: 200;
+		align-items: center;
+		text-align: right;
+		display: flex;
+		color: $white;
+		white-space: nowrap;
+		justify-content: flex-end;
+		overflow: hidden;
+		padding: 0 2px 8px;
+		text-overflow: ellipsis;
+		transform: translate(0, -50%);
+		transform-origin: 0 0;
+		@include media('>=screen-sm') {
+			@include size(140px, 204px);
+			padding: 0 0 10px;
+		}
+		@include media('>=screen-lg') {
+			@include fontsize(18, 20);
+			@include size(192px, 279px);
+			padding: 0 0 14px;
+		}
+		&:after {
+			@include size(190px, 138px);
+			z-index: -1;
+			@include absolute(0, 0);
+			background: url(../images/next.svg) no-repeat;
+			background-size: cover;
+			@include media('>=screen-sm') {
+				@include size(280px, 204px);
+			}
+			@include media('>=screen-lg') {
+				@include size(383px, 279px);
+			}
+		}
+		i {
+			@include size(18px);
+			@include fontsize(8, 18);
+			background: #a01a60;
+			border-radius: 50%;
+			text-align: center;
+			margin: 0 0 0 5px;
+			color: $white;
+			@include media('>=screen-sm') {
+				@include size(24px);
+				margin: 0 3px 0 5px;
+				line-height: 24px;
+			}
+			@include media('>=screen-lg') {
+				@include size(30px);
+				@include fontsize(12, 30);
+				background: #a01a60;
+				margin: 0 4px;
+			}
+		}
+		&:hover,
+		&:focus {
+			opacity: .9;
+			color: $brand-primary;
+			@include media('>=screen-sm') {
+				opacity: 1;
+			}
+		}
+	}
+	.btn-go {
+		@include text-hide;
+		@include size(24px, 40px);
+		@include inline(top);
+		border: 2px solid $white;
+		position: relative;
+		border-radius: 15px;
+		&:after {
+			@include absolute(7px, 50%);
+			background: $white;
+			content: "";
+			width: 2px;
+			margin: 0 0 0 -1px;
+			height: 10px;
+			border-radius: 2px;
+		}
+	}
+	.paging {
+		@include inline(top);
+		@include fontsize(14, 18);
+		border-bottom: 2px solid $white;
+		padding: 0 6px 4px 0;
+		margin: 0 -8px 10px -9px;
+		letter-spacing: -.32em;
+		min-width: 65px;
+		@include media('>=screen-md') {
+			margin-bottom: 15px;
+			padding-bottom: 7px;
+			min-width: 79px;
+		}
+		li {
+			@include inline(top);
+			padding: 0 8px 4px 9px;
+			letter-spacing: 0;
+			&.active a {
+				color: $white;
+			}
+			a {
+				display: block;
+				color: rgba($white, .3);
+				&:hover,
+				&:focus {
+					color: $white;
+				}
+			}
+		}
+	}
+	.info {
+		@include absolute(auto, 80px, 20px, 40px);
+		z-index: 70;
+		@include media('>=screen-md') {
+			right: 40px;
+			left: 100px;
+		}
+		.indicators {
+			@include fontsize(14, 18);
+			overflow: hidden;
+			margin: 0 0 2px;
+			.title {
+				display: block;
+				overflow: hidden;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				padding: 3px 10px 3px 0;
+				@include media('>=screen-sm') {
+					padding: 3px 22px 3px 0;
+				}
+			}
+			ul {
+				@extend %listreset;
+				@include inline(top);
+				letter-spacing: -.32em;
+				margin: 0 -5px;
+				float: right;
+				max-width: 50%;
+				white-space: nowrap;
+				li {
+					@include text-hide;
+					@include inline;
+					@include size(10px);
+					margin: 5px 5px 4px;
+					border-radius: 50%;
+					background: $yellow;
+					&.dark-yellow {
+						background: $yellow-dark;
+					}
+					&.orange {
+						background: $brand-warning;
+					}
+					&.red {
+						background: $brand-danger;
+					}
+				}
+			}
+		}
+		.btn-area {
+			overflow: hidden;
+			margin: 0 -10px;
+			letter-spacing: -.32em;
+			.btn {
+				min-width: 70px;
+				margin: 0 10px;
+				letter-spacing: 0;
+				max-width: 40%;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+		}
+	}
+	.article {
+		@extend %clearfix;
+		position: relative;
+		letter-spacing: -.32em;
+		padding: 35px 0 35px;
+		@include media('>=screen-sm') {
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+		@include media('>=screen-md') {
+			padding-top: 82px;
+			padding-bottom: 60px;
+		}
+		&:before {
+			@include absolute(0, 10%, -20px, 0);
+			background: $white;
+			z-index: -1;
+			display: block;
+			content: "";
+			@include media('>=screen-sm') {
+				right: 4%;
+				left: 10%;
+			}
+			@include media('>=screen-md') {
+				left: 17%;
+				right: 8.6%;
+			}
+		}
+		> * {
+			letter-spacing: 0;
+		}
+		h1 {
+			@include media('>=screen-md') {
+				margin: 0 0 28px;
+			}
+		}
+		.btn {
+			@include media('>=screen-lg') {
+				min-width: 250px;
+			}
+		}
+		.text-holder {
+			padding: 0 0 20px;
+			&:only-child {
+				width: 90%;
+			}
+			@include media('>=screen-sm') {
+				@include inline;
+				padding: 0 0 0 5%;
+				width: calc(100% - 220px);
+			}
+			@include media('>=screen-md') {
+				width: calc(100% - 270px);
+				padding: 0 0 0 8.6%;
+			}
+		}
+		.img-responsive {
+			margin: 0 0 0 calc(10% + 20px);
+			@include media('>=screen-sm') {
+				@include inline;
+				width: 200px;
+				margin: 0 0 0 20px;
+			}
+			@include media('>=screen-md') {
+				margin: 0 0 0 20px;
+				width: 250px;
+			}
+			img {
+				@include img-responsive;
+				margin: 0 auto;
+				box-shadow: 0 6px 16px rgba(48, 71, 109, 0.3);
+				@include media('>=screen-md') {
+					box-shadow: 0 10px 20px rgba(48, 71, 109, 0.3);
+				}
+			}
+		}
+	}
+	.graph {
+		@include media('<screen-sm') {
+			height: auto !important;
+		}
+		@include media('>=screen-sm') {
+			@include v-align;
+		}
+	}
+}
+
+/* section inverse styles */
+
+.section.inverse {
+	color: $gray-dark;
+	&:last-child:before {
+		display: none;
+	}
+	&:before {
+		@include absolute(auto, 0, 0, 0);
+		height: 1px;
+		content: "";
+		z-index: 80;
+		background: rgba(#31476d, .3);
+	}
+	h1,
+	h2 {
+		color: $brand-primary;
+	}
+	.paging {
+		border-bottom-color: $brand-primary;
+		li {
+			&.active a {
+				color: $brand-primary;
+			}
+			a {
+				color: rgba($brand-primary, .3);
+				&:hover,
+				&:focus {
+					color: $brand-primary;
+				}
+			}
+		}
+	}
+}
+
+/* section intro styles */
+
+.section.intro {
+	&:after {
+		vertical-align: bottom;
+	}
+	.section-holder {
+		vertical-align: bottom;
+		padding-bottom: 27px;
+		padding-top: 85px;
+		@include media('>=screen-sm') {
+			padding-bottom: 40px;
+		}
+		@include media('>=screen-md') {
+			padding-bottom: 60px;
+			padding-bottom: 60px;
+		}
+	}
+	.text-box {
+		overflow: hidden;
+		margin: 0 0 20px;
+		@include media('>=screen-sm') {
+			max-height: 115px;
+		}
+		@include media('>=screen-md') {
+			margin: 0 0 35px;
+			max-height: 120px;
+		}
+		p:last-child {
+			margin: 0;
+		}
+	}
+}
+
+/* section services styles */
+
+.section.services {
+	.row {
+		@include media('>=screen-sm') {
+			display: flex;
+			flex-flow: row nowrap;
+			align-content: center;
+			align-items: center;
+			&:after,
+			&:before {
+				display: block;
+			}
+		}
+	}
+	.info-block {
+		padding-bottom: 20px;
+		@include media('>=screen-md') {
+			padding-top: 20px;
+		}
+		@include media('>=screen-lg') {
+			padding-top: 43px;
+		}
+	}
+	.text-block {
+		overflow: hidden;
+		letter-spacing: -.32em;
+		@include media('>=screen-md') {
+			margin: 0 -12px;
+		}
+		.text-col {
+			position: relative;
+			overflow: hidden;
+			letter-spacing: 0;
+			@include media('>=screen-md') {
+				@include inline(top);
+				width: 50%;
+				padding: 0 12px;
+			}
+			&:first-child:after {
+				@include size(2px, 70px);
+				margin: -8px auto 0;
+				background: $white;
+				@include media('>=screen-md') {
+					content: "";
+					display: block;
+					margin-top: -16px;
+				}
+				@include media('>=screen-lg') {
+					height: 110px;
+				}
+			}
+		}
+	}
+	.img-responsive {
+		max-width: 480px;
+		border-radius: 4px 0 0 4px;
+		position: relative;
+		margin: 0 -20px 0 0;
+		@include media('>screen-xs') {
+			margin: 0 auto;
+			border-radius: 4px;
+		}
+		@include media('>=screen-sm') {
+			margin: 0 -55px 0 0;
+			float: right;
+			max-width: 540px;
+			border-radius: 4px 0 0 4px;
+		}
+		@include media('>=screen-md') {
+			margin: 0 -60px 0 0;
+		}
+		@include media('>=1024px') {
+			margin: 0 -76px 0 0;
+		}
+		@include media('>=screen-lg') {
+			margin: 0 -68px 0 0;
+		}
+		@include media('>=screen-lgx') {
+			margin: 0 -108px 0 0;
+		}
+		&:after {
+			@include absolute(7px, -7px, -7px, -7px);
+			border: 7px solid rgba(#30476d, 0.2);
+			content: "";
+			z-index: -1;
+			border-radius: 4px 0 0 4px;
+			@include media('>screen-xs') {
+				border-radius: 4px;
+			}
+			@include media('>=screen-sm') {
+				top: 14px;
+				left: -7px;
+				border-radius: 4px 0 0 4px;
+				right: 0;
+				bottom: -7px;
+			}
+			@include media('>=screen-md') {
+				top: 10px;
+				border-width: 20px;
+				left: -10px;
+				bottom: -10px;
+			}
+		}
+		img {
+			@include inline(top);
+			max-width: 100%;
+			border-radius: 4px 0 0 4px;
+			@include media('>screen-xs') {
+				border-radius: 4px;
+			}
+			@include media('>=screen-sm') {
+				border-radius: 4px 0 0 4px;
+			}
+		}
+	}
+}
+
+/* section procedure styles */
+
+.section.procedure {
+	&:after,
+	.section-holder {
+		vertical-align: top;
+	}
+	.section-holder {
+		padding-top: 151px;
+	}
+	.text-block {
+		overflow: hidden;
+		margin: 0 auto;
+		width: 250px;
+		@include media('>=screen-sm') {
+			margin: 4px 0 0 42.5%;
+			float: left;
+			&.add {
+				float: right;
+				margin: 54px 8.5% 0 0;
+			}
+			&.add2 {
+				margin: 54px 0 0 17%;
+			}
+		}
+		.text-mask {
+			overflow: hidden;
+		}
+		p {
+			@include media('>=screen-md') {
+				margin: 0 0 20px;
+			}
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+}
+
+/* section future styles */
+
+.section.future {
+	&:after,
+	.section-holder {
+		vertical-align: top;
+	}
+	.section-holder {
+		@include media('>=screen-md') {
+			padding-top: 166px;
+			padding-bottom: 166px;
+		}
+	}
+}
+
+/* section block styles (news, map and graph) */
+
+.section.block {
+	.content {
+		position: relative;
+		z-index: 50;
+	}
+	.img-area {
+		overflow: hidden;
+		margin: 0 0 20px;
+		@include media('<screen-sm') {
+			height: auto !important;
+		}
+		@include media('>=screen-sm') {
+			@include absolute(0, 10%, 4%);
+			margin: 0 20px;
+			z-index: -1;
+		}
+		@include media('>=screen-md') {
+			left: 16.5%;
+			right: 8.3%;
+		}
+		img {
+			@include img-responsive;
+		}
+	}
+	.text-block {
+		overflow: hidden;
+		margin: 0 auto;
+		text-align: left;
+		width: 250px;
+		@include media('>=screen-sm') {
+			margin: 0 -5% 0 0;
+		}
+		@include media('>=screen-md') {
+			width: 340px;
+			margin: -20px 1% 0 0;
+		}
+		@include media('>=screen-lg') {
+			width: 417px;
+		}
+		&.add {
+			vertical-align: top;
+			margin: 0;
+			@include media('>=screen-sm') {
+				margin: 30px 0 10px 5%;
+				width: 340px;
+			}
+			@include media('>=screen-md') {
+				width: 470px;
+				margin-top: 57px;
+				margin: 57px 0 10px 8.6%;
+			}
+			@include media('>=screen-lg') {
+				width: 593px;
+			}
+		}
+		.text-mask {
+			overflow: hidden;
+		}
+		h2 {
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+	.paging {
+		@include media('>=screen-md') {
+			padding-bottom: 9px;
+			margin-bottom: 18px;
+		}
+	}
+}

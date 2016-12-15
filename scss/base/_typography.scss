@@ -1,0 +1,77 @@
+body {
+	line-height: 24px;
+	font-weight: $medium;
+	
+		@include media('>=screen-sm') {
+			@include fontsize(14, 20);
+		}
+}
+.btn {
+	@include fontsize(14, 20);
+	border-width: 2px;
+	border-style: solid;
+	max-width: 100%;
+	box-shadow: none;
+	padding: 3px 10px;
+	min-width: 130px;
+	line-height: 18px;
+	font-weight: $medium;
+	@include media('>=screen-sm') {
+		
+	}
+	@include media('>=screen-md') {
+		min-width: 160px;
+	}
+	&.btn-default {
+		border-color: $white; 
+	}
+	&.btn-primary {
+		border-color: $brand-primary; 
+		&:hover, &:focus {
+			background: $brand-primary;
+			color: $white;
+		}
+	}
+	&.btn-default:hover, &.btn-default:focus {
+		background: $white;
+		color: $brand-primary;
+		border-color: $white;
+		box-shadow: none; 
+	}
+}
+h1 {
+	line-height: 34px;
+	color: $white;
+	margin: 0 0 15px;
+	@include media('>=screen-sm') {
+		@include fontsize(45, 50);
+		
+	}
+	@include media('>=screen-md') {
+		@include fontsize(72, 75);
+		margin: 0 0 22px;
+	}
+	@include media('>=screen-lg') {
+		@include fontsize(100, 100);
+		
+	}
+}
+h2 {
+	line-height: 27px;
+	color: $white;
+	margin: 0 0 17px;
+	@include media('>=screen-md') {
+		@include fontsize(26, 32);
+		margin: 0 0 20px;
+	}
+	@include media('>=screen-lg') {
+		@include fontsize(32, 40);
+		margin: 0 0 30px;
+	}
+}
+p {
+	margin: 0 0 12px;
+	@include media('>=screen-md') {
+		margin: 0 0 16px;
+	}
+}

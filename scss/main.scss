@@ -1,0 +1,42 @@
+$breakpoints: ( 'xs-phone': 320px, 'screen-xs': 480px, 'screen-sm': 768px, 'screen-md': 992px, 'screen-lg': 1200px, 'screen-lgx': 1280px);
+// keywords
+$media-expressions: ( 'screen': 'screen', 'print': 'print', 'handheld': 'handheld', 'landscape': '(orientation: landscape)', 'portrait': '(orientation: portrait)', 'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)', 'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)');
+// ligatured operators ≥ ≤
+
+/* ---------------------------------------------------------
+   1. General reset
+   2. Font icons 
+	 3. Typography
+   4. Сommon site styles
+   ---------------------------------------------------------*/
+
+@import 'vendors/include-media';
+@import "bootstrap-custom";
+@import "vendors/bootstrap/variables";
+
+/* ---------------------------------------------------------
+   1. General reset
+   ---------------------------------------------------------*/
+
+@import "vendors/bootstrap/mixins";
+@import 'base/mixins';
+@import 'base/helpers';
+@import 'base/reset';
+
+/* ---------------------------------------------------------
+   2. Font icons 
+   ---------------------------------------------------------*/
+
+@import 'base/icons';
+
+/* ---------------------------------------------------------
+   3. Typography
+   ---------------------------------------------------------*/
+
+@import 'base/typography';
+
+/* ---------------------------------------------------------
+   4. Сommon site styles
+   ---------------------------------------------------------*/
+
+@import 'layout/common';
