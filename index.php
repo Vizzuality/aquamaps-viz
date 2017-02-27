@@ -19,6 +19,8 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<!-- include custom JavaScript -->
 	<script src="js/jquery.main.js" defer></script>
+	<script src="js/lory.min.js" defer></script>
+	<script src="js/index.js" defer></script>
 </head>
 <body>
 	<!-- main container of all the page elements -->
@@ -111,7 +113,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-xs-12">
+							<div class="col-xs-9 pull-right">
 								<div class="text-block">
 									<!-- paging -->
 									<ul class="paging">
@@ -123,6 +125,69 @@
 										<p>Why not see which species may potentially invade your area? </p>
 									</div>
 								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-9 pull-right">
+								<div class="slider js_slider">
+	                <div class="frame js_frame">
+                    <ul class="slides js_slides">
+                      <li class="js_slide slide">
+												<div class="c-pic-slider">
+													<div class="c-pic-slider__picture"></div>
+													<div class="c-pic-slider__separator"></div>
+													<div class="c-pic-slider__name">Lorem Ipsum</div>
+												</div>
+											</li>
+											<li class="js_slide slide">
+												<div class="c-pic-slider">
+													<div class="c-pic-slider__picture"></div>
+													<div class="c-pic-slider__separator"></div>
+													<div class="c-pic-slider__name">Lorem Ipsum</div>
+												</div>
+											</li>
+											<li class="js_slide slide">
+												<div class="c-pic-slider">
+													<div class="c-pic-slider__picture"></div>
+													<div class="c-pic-slider__separator"></div>
+													<div class="c-pic-slider__name">Lorem Ipsum</div>
+												</div>
+											</li>
+											<li class="js_slide slide">
+												<div class="c-pic-slider">
+													<div class="c-pic-slider__picture"></div>
+													<div class="c-pic-slider__separator"></div>
+													<div class="c-pic-slider__name">Lorem Ipsum</div>
+												</div>
+											</li>
+											<li class="js_slide slide">
+												<div class="c-pic-slider">
+													<div class="c-pic-slider__picture"></div>
+													<div class="c-pic-slider__separator"></div>
+													<div class="c-pic-slider__name">Lorem Ipsum</div>
+												</div>
+											</li>
+											<li class="js_slide slide">
+												<div class="c-pic-slider">
+													<div class="c-pic-slider__picture"></div>
+													<div class="c-pic-slider__separator"></div>
+													<div class="c-pic-slider__name">Lorem Ipsum</div>
+												</div>
+											</li>
+                    </ul>
+	                </div>
+	                <span class="js_prev prev"></span>
+	                <span class="js_next next"></span>
+									<div class="c-select js_select">
+										<label>Species</label>
+										<select>
+											<option>Mnemiopsis leidy</option>
+											<option>Mnemiopsis leidy</option>
+											<option>Mnemiopsis leidy</option>
+											<option>Mnemiopsis leidy</option>
+										</select>
+									</div>
+		            </div>
 							</div>
 						</div>
 					</div>
@@ -328,6 +393,35 @@
 					</div>
 				</div>
 			</section>
+
+			<div class="c-show-pic-modal">
+				<div class="section-holder">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-10 center-block">
+								<div class="c-show-pic__picture">
+									<div class="c-show-pic-modal__close"></div>
+								</div>
+							</div>
+							<div class="col-xs-10 center-block">
+								<div class="c-show-pic__name pull-left">Native map of the Mnemiopsis leidyi</div>
+								<div class="c-select js_select pull-right">
+									<label>Species</label>
+									<select>
+										<option>Mnemiopsis leidy</option>
+										<option>Mnemiopsis leidy</option>
+										<option>Mnemiopsis leidy</option>
+										<option>Mnemiopsis leidy</option>
+									</select>
+								</div>
+								<div class="c-show-pic__legend pull-left">
+									<div class="c-show-pic__legend-title">Relative probabilities of occurrence</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 	</div>
 </body>

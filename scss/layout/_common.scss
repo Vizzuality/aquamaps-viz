@@ -699,7 +699,7 @@
 		margin: 0 auto;
 		width: 250px;
 		@include media('>=screen-sm') {
-			margin: 4px 0 0 42.5%;
+			margin: 4px 0 0 0;
 			float: left;
 			&.add {
 				float: right;
