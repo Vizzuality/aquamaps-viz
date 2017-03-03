@@ -1,3 +1,4 @@
+<?php include 'species_data.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,8 +20,20 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<!-- include custom JavaScript -->
 	<script src="js/jquery.main.js" defer></script>
+	<script src="js/lory.min.js" defer></script>
+	<script src="js/index.js" defer></script>
 </head>
 <body>
+	<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<defs>
+			<symbol id="icon-arrow" viewBox="0 0 53 32">
+				<path d="M26.667 30.4l-23.467-22.933 4.267-4.267 19.2 19.733 19.2-19.733 3.733 4.267z"></path>
+			</symbol>
+			<symbol id="icon-close" viewBox="0 0 32 32">
+				<path d="M17.9 15.8l13.7-13.8c0.5-0.5 0.5-1.3 0-1.9s-1.3-0.5-1.9 0l-13.7 13.8-13.7-13.7c-0.5-0.5-1.3-0.5-1.9 0s-0.5 1.3 0 1.9l13.7 13.7-13.7 13.7c-0.5 0.5-0.5 1.3 0 1.9 0.3 0.3 0.5 0.4 0.9 0.4s0.7-0.1 0.9-0.4l13.8-13.8 13.7 13.7c0.3 0.3 0.7 0.4 0.9 0.4 0.3 0 0.7-0.1 0.9-0.4 0.5-0.5 0.5-1.3 0-1.9l-13.6-13.6z"></path>
+			</symbol>
+		</defs>
+	</svg>
 	<!-- main container of all the page elements -->
 	<div id="wrapper">
 		<!-- social networks -->
@@ -97,7 +110,7 @@
 				</div>
 			</section>
 			<!-- section procedure (step 1) -->
-			<section class="section procedure" data-nav="light" data-logo="light">
+			<section class="section procedure" data-nav="light" data-logo="light" data-page="1">
 				<!-- section bg (procedure) -->
 				<div class="bg-holder">
 					<img src="images/bg3.jpg" alt="How could I use it?">
@@ -106,22 +119,54 @@
 				<div class="section-holder">
 					<div class="container">
 						<div class="row">
-							<div class="col-xs-12 col-sm-5 col-md-6 center-block">
+							<div class="col-xs-12 col-sm-6 center-block">
 								<h1>How could I use it?</h1>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-xs-12">
+							<div class="col-xs-12 col-sm-9 pull-right">
 								<div class="text-block">
 									<!-- paging -->
 									<ul class="paging">
-										<li class="active"><a href="#">1</a></li>
-										<li><a href="#">2</a></li>
-										<li><a href="#">3</a></li>
+										<li class="active" data-value="1">1</li>
+										<li data-value="2">2</li>
+										<li data-value="3">3</li>
 									</ul>
 									<div class="text-mask">
-										<p>Why not see which species may potentially invade your area? </p>
+										<p>Why not see which species may potentially invade your area?</p>
 									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9 pull-right">
+								<?php $procedureSpecies = array_slice($species, 0, 3); ?>
+								<?php foreach ($procedureSpecies as $specieId => $specie) :?>
+									<div class="slider js_slider <?= $specieId == 0 ? "-selected" : ""?>" data-specie-id="<?= $specie['key'] ?>">
+		                <div class="frame js_frame">
+	                    <ul class="slides js_slides">
+												<?php foreach ($specie['pictures'] as $pictureId => $picture) :?>
+													<li class="js_slide slide">
+														<div class="c-pic-slide js_pic_slide" data-pic-url="<?= $picture['url'] ?>" data-pic-name="<?= $picture['name'] ?> of <?= $specie['name'] ?>">
+															<div class="c-pic-slide__picture" style="background-image: url('<?= $picture['url'] ?>')"></div>
+															<div class="c-pic-slide__separator"></div>
+															<div class="c-pic-slide__name"><?= $picture['name'] ?></div>
+														</div>
+													</li>
+												<?php endforeach ?>
+	                    </ul>
+		                </div>
+			            </div>
+								<?php endforeach ?>
+
+								<div class="c-select">
+									<label>Species</label>
+									<select class="js_select">
+										<?php foreach ($procedureSpecies as $specie) :?>
+											<option value="<?= $specie['key'] ?>"><?= $specie['name'] ?></option>
+										<?php endforeach ?>
+									</select>
+									<svg class="icon icon-arrow"><use xlink:href="#icon-arrow"></use></svg>
 								</div>
 							</div>
 						</div>
@@ -129,7 +174,7 @@
 				</div>
 			</section>
 			<!-- section procedure (step 2) -->
-			<section class="section procedure" data-nav="light" data-logo="light">
+			<section class="section procedure is-hidden" data-nav="light" data-logo="light" data-page="2">
 				<!-- section bg (procedure) -->
 				<div class="bg-holder">
 					<img src="images/bg4.jpg" alt="How could I use it?">
@@ -138,23 +183,53 @@
 				<div class="section-holder">
 					<div class="container">
 						<div class="row">
-							<div class="col-xs-12 col-sm-5 col-md-6 center-block">
+							<div class="col-xs-12 col-sm-6 center-block">
 								<h1>How could I use it?</h1>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-xs-12">
-								<div class="text-block add">
+							<div class="col-xs-12 col-sm-9 pull-right">
+								<div class="text-block">
 									<!-- paging -->
 									<ul class="paging">
-										<li><a href="#">1</a></li>
-										<li class="active"><a href="#">2</a></li>
-										<li><a href="#">3</a></li>
+										<li data-value="1">1</li>
+										<li class="active" data-value="2">2</li>
+										<li data-value="3">3</li>
 									</ul>
 									<div class="text-mask">
-										<p>Planning a Marine Protected Area? The MPA Planning Tool helps in identifying suitable sites for an MPA. </p>
-										<p>Select species you want to protect in an area and the tool creates a map showing where most of these species are likely to be found.</p>
+										<p>Find out how suitable habitat will change for Europe’s species because of climate change</p>
 									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9 pull-right">
+								<?php $procedureSpecies = array_slice($species, 3, 3); ?>
+								<?php foreach ($procedureSpecies as $specieId => $specie) :?>
+									<div class="slider js_slider <?= $specieId == 0 ? "-selected" : ""?>" data-specie-id="<?= $specie['key'] ?>">
+		                <div class="frame js_frame">
+	                    <ul class="slides js_slides">
+												<?php foreach ($specie['pictures'] as $pictureId => $picture) :?>
+													<li class="js_slide slide">
+														<div class="c-pic-slide js_pic_slide" data-pic-url="<?= $picture['url'] ?>" data-pic-name="<?= $picture['name'] ?> of <?= $specie['name'] ?>">
+															<div class="c-pic-slide__picture" style="background-image: url('<?= $picture['url'] ?>')"></div>
+															<div class="c-pic-slide__separator"></div>
+															<div class="c-pic-slide__name"><?= $picture['name'] ?></div>
+														</div>
+													</li>
+												<?php endforeach ?>
+	                    </ul>
+		                </div>
+			            </div>
+								<?php endforeach ?>
+
+								<div class="c-select">
+									<label>Species</label>
+									<select class="js_select">
+										<?php foreach ($procedureSpecies as $specie) :?>
+											<option value="<?= $specie['key'] ?>"><?= $specie['name'] ?></option>
+										<?php endforeach ?>
+									</select>
 								</div>
 							</div>
 						</div>
@@ -162,7 +237,7 @@
 				</div>
 			</section>
 			<!-- section procedure (step 3) -->
-			<section class="section procedure" data-nav="light" data-logo="light">
+			<section class="section procedure is-hidden" data-nav="light" data-logo="light" data-page="3">
 				<!-- section bg (procedure) -->
 				<div class="bg-holder">
 					<img src="images/bg5.jpg" alt="How could I use it?">
@@ -171,23 +246,59 @@
 				<div class="section-holder">
 					<div class="container">
 						<div class="row">
-							<div class="col-xs-12 col-sm-5 col-md-6 center-block">
+							<div class="col-xs-12 col-sm-6 center-block">
 								<h1>How could I use it?</h1>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-xs-12">
-								<div class="text-block add2">
+							<div class="col-xs-12 col-sm-9 pull-right">
+								<div class="text-block">
 									<!-- paging -->
 									<ul class="paging">
-										<li><a href="#">1</a></li>
-										<li><a href="#">2</a></li>
-										<li class="active"><a href="#">3</a></li>
+										<li data-value="1">1</li>
+										<li data-value="2">2</li>
+										<li class="active" data-value="3">3</li>
 									</ul>
 									<div class="text-mask">
-										<p>Find out how suitable habitat will change for Europe’s species because of climate change.</p>
+										<p>MPA planning tool</p>
 									</div>
 								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9 pull-right">
+								<div class="slider js_slider -selected" data-specie-id="-1">
+	                <div class="frame js_frame">
+                    <ul class="slides js_slides">
+											<?php
+												$planningToolPictures = [
+													"/images/planning_tool/MPA_Step1.png",
+													"/images/planning_tool/MPA_Step2.png",
+													"/images/planning_tool/MPA_Step3.png",
+													"/images/planning_tool/MPA_Step4.png",
+													"/images/planning_tool/MPA_Step5.png",
+													"/images/planning_tool/MPA_Step6.png",
+													"/images/planning_tool/MPA_Step7.png",
+													"/images/planning_tool/MPA_Step8.png",
+													"/images/planning_tool/MPA_Step8b.png",
+												]
+											?>
+											<?php foreach ($planningToolPictures as $pictureId => $url) :?>
+												<li class="js_slide slide">
+													<div class="c-pic-slide js_pic_slide" data-pic-url="<?= $url ?>" data-pic-name="">
+														<div class="c-pic-slide__picture" style="background-image: url('<?= $url ?>')"></div>
+													</div>
+												</li>
+											<?php endforeach ?>
+                    </ul>
+	                </div>
+	                <span class="js_prev prev">
+										<svg class="icon icon-arrow"><use xlink:href="#icon-arrow"></use></svg>
+									</span>
+	                <span class="js_next next">
+										<svg class="icon icon-arrow"><use xlink:href="#icon-arrow"></use></svg>
+									</span>
+		            </div>
 							</div>
 						</div>
 					</div>
@@ -328,6 +439,31 @@
 					</div>
 				</div>
 			</section>
+
+			<div class="c-show-pic-modal is-hidden">
+				<div class="section-holder">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 center-block">
+								<div class="c-show-pic__picture js_show_pic"></div>
+							</div>
+							<div class="col-xs-12">
+								<div class="c-show-pic__name js_show_name"></div>
+							</div>
+							<div class="col-xs-12">
+								<div class="c-show-pic__legend">
+									<div class="c-show-pic__legend-title">Relative probabilities of occurrence</div>
+									<img class="c-show-pic__legend-img" src="images/legend.svg" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="c-show-pic-modal__close js_show_pic_modal_close">
+					<svg class="icon icon-close"><use xlink:href="#icon-close"></use></svg>
+				</div>
+				<div class="c-show-pic-modal__veil js_show_pic_modal_close"></div>
+			</div>
 		</main>
 	</div>
 </body>

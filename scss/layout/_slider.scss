@@ -1,0 +1,64 @@
+.slider {
+  display: none;
+  position: relative;
+
+  &.-selected {
+    display: block;
+  }
+
+  .prev,
+  .next {
+    position: absolute;
+    top: 58px;
+    width: 24px;
+    height: 24px;
+    border: solid 1px rgba(#ffffff, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon {
+      fill: #fff;
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  .prev {
+    right: -40px;
+
+    .icon {
+      transform: rotateZ(90deg);
+    }
+  }
+
+  .next {
+    right: -66px;
+
+    .icon {
+      transform: rotateZ(-90deg);
+    }
+  }
+}
+
+.frame {
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.slides {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.slide {
+  position: relative;
+  display: inline-block;
+  white-space: normal;
+  vertical-align: top;
+}
