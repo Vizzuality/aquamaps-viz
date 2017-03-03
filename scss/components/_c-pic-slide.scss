@@ -1,25 +1,29 @@
-.c-pic-slider {
+.c-pic-slide {
   position: relative;
   width: 100%;
 
-  .c-pic-slider__picture {
+  .c-pic-slide__picture {
     width: 100%;
     height: 167px;
-    background-color: yellow;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
   }
 
-  .c-pic-slider__separator {
+  .c-pic-slide__separator {
     width: 9.5px;
     height: 1px;
     margin-top: 11px;
     background-color: rgba(#fff, 0.5);
   }
 
-  .c-pic-slider__name {
+  .c-pic-slide__name {
     margin-top: 7px;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.43;
     color: rgba(#fff, 0.5);
+    text-align: left;
   }
 }

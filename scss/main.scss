@@ -39,7 +39,7 @@ $media-expressions: ( 'screen': 'screen', 'print': 'print', 'handheld': 'handhel
 /* ---------------------------------------------------------
    4. Сommon site styles
    ---------------------------------------------------------*/
-
+@import 'base/settings';
 @import 'layout/common';
 @import 'layout/slider';
 
@@ -47,6 +47,6 @@ $media-expressions: ( 'screen': 'screen', 'print': 'print', 'handheld': 'handhel
    5. Сomponents
    ---------------------------------------------------------*/
 
-@import 'components/c-pic-slider';
+@import 'components/c-pic-slide';
 @import 'components/c-show-pic';
 @import 'components/c-select';
