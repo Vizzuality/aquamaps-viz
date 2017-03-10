@@ -357,7 +357,7 @@
 				</div>
 			</section>
 			<!-- section map -->
-			<section class="section block inverse" data-nav="inverse" data-logo="inverse">
+			<section id="inverse-map" class="section block inverse" data-nav="inverse" data-logo="inverse">
 				<!-- section content (map) -->
 				<div class="section-holder">
 					<div class="container">
@@ -373,8 +373,8 @@
 								<div class="text-block add">
 									<!-- paging -->
 									<ul class="paging">
-										<li class="active"><a href="#">1</a></li>
-										<li><a href="#">2</a></li>
+										<li class="active">1</li>
+										<li onclick="goTo('inverse-graph');">2</li>
 									</ul>
 									<div class="text-mask">
 										<h2>Acipenser naccarii (Adriatic stugeon) is a critically endangered species. Climate change could affect its distribution in Europe. </h2>
@@ -386,7 +386,7 @@
 				</div>
 			</section>
 			<!-- section graph -->
-			<section class="section block inverse" data-nav="inverse" data-logo="inverse">
+			<section id="inverse-graph" class="section block inverse" data-nav="inverse" data-logo="inverse">
 				<!-- section content (graph) -->
 				<div class="section-holder">
 					<div class="container">
@@ -402,8 +402,8 @@
 								<div class="text-block">
 									<!-- paging -->
 									<ul class="paging">
-										<li><a href="#">1</a></li>
-										<li class="active"><a href="#">2</a></li>
+										<li onclick="goTo('inverse-map');">1</li>
+										<li class="active">2</li>
 									</ul>
 									<div class="text-mask">
 										<h2>By 2100, Europe’s Adriatic sturgeon could lose 40 %  of  its distribution area.</h2>
