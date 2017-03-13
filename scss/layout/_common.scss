@@ -515,15 +515,12 @@
 	.paging {
 		border-bottom-color: $brand-primary;
 		li {
-			&.active a {
+			color: rgba($brand-primary, .3);
+
+			&:hover,
+			&:focus,
+			&.active {
 				color: $brand-primary;
-			}
-			a {
-				color: rgba($brand-primary, .3);
-				&:hover,
-				&:focus {
-					color: $brand-primary;
-				}
 			}
 		}
 	}

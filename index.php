@@ -347,8 +347,8 @@
 								<!-- article -->
 								<article class="article">
 									<div class="text-holder">
-										<h1><a href="#">Climate impact  on Europe’s  threatened fish</a></h1>
-										<a href="#" class="btn btn-primary">explore the case study</a>
+										<h1><a href="http://www.aquamaps.org/am_eubon/OtherSpeciesList.php?type=threatened" target="_blank">Climate impact  on Europe’s  threatened fish</a></h1>
+										<a href="http://www.aquamaps.org/am_eubon/OtherSpeciesList.php?type=threatened" target="_blank" class="btn btn-primary">explore the case study</a>
 									</div>
 								</article>
 							</div>
@@ -357,7 +357,7 @@
 				</div>
 			</section>
 			<!-- section map -->
-			<section class="section block inverse" data-nav="inverse" data-logo="inverse">
+			<section id="inverse-map" class="section block inverse" data-nav="inverse" data-logo="inverse">
 				<!-- section content (map) -->
 				<div class="section-holder">
 					<div class="container">
@@ -365,19 +365,18 @@
 							<div class="col-xs-12 center-block graph">
 								<div class="img-area">
 									<picture>
-										<source srcset="images/map.jpg, images/map-2x.jpg 2x" media="(min-width: 768px)">
-										<source srcset="images/map-small.jpg, images/map-small-2x.jpg 2x">
-										<img src="images/map.jpg" alt="map description">
+										<img src="images/species/acipenser_nacarii/pic_Fis-29589_native.jpg" alt="map description" width="100%">
 									</picture>
 								</div>
 								<div class="text-block add">
 									<!-- paging -->
 									<ul class="paging">
-										<li class="active"><a href="#">1</a></li>
-										<li><a href="#">2</a></li>
+										<li class="active">1</li>
+                    <li onclick="goTo('inverse-map2');">2</li>
+										<li onclick="goTo('inverse-graph');">3</li>
 									</ul>
 									<div class="text-mask">
-										<h2>Acipenser naccarii (Adriatic stugeon) is a critically endangered species. Climate change could affect its distribution in Europe. </h2>
+                    <h2><a href="http://www.aquamaps.org/am_eubon/premap.php?map=cached&SpecID=Fis-29589&cache=1&type_of_map=regular" target="_blank">Acipenser naccarii</a> Adriatic sturgeon (Critically endangered)</h2>
 									</div>
 								</div>
 							</div>
@@ -385,8 +384,36 @@
 					</div>
 				</div>
 			</section>
+      <!-- section map -->
+      <section id="inverse-map2" class="section block inverse" data-nav="inverse" data-logo="inverse">
+        <!-- section content (map) -->
+        <div class="section-holder">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 center-block graph">
+                <div class="img-area">
+                  <picture>
+                    <img src="images/species/callinectes_sapidus/exp_7_pic_W-Bch-107379_native.jpg" alt="map description" width="100%">
+                  </picture>
+                </div>
+                <div class="text-block add">
+                  <!-- paging -->
+                  <ul class="paging">
+                    <li onclick="goTo('inverse-map');">1</li>
+                    <li class="active">2</li>
+                    <li onclick="goTo('inverse-graph');">3</li>
+                  </ul>
+                  <div class="text-mask">
+                    <h2><a href="http://www.aquamaps.org/am_eubon/premap.php?map=cached&SpecID=Fis-23061&expert_id=7&cache=1&type_of_map=regular" target="_blank">Carcharhinus longimanus</a> Oceanic whitetip shark (Vulnerable)</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 			<!-- section graph -->
-			<section class="section block inverse" data-nav="inverse" data-logo="inverse">
+			<section id="inverse-graph" class="section block inverse" data-nav="inverse" data-logo="inverse">
 				<!-- section content (graph) -->
 				<div class="section-holder">
 					<div class="container">
@@ -402,8 +429,9 @@
 								<div class="text-block">
 									<!-- paging -->
 									<ul class="paging">
-										<li><a href="#">1</a></li>
-										<li class="active"><a href="#">2</a></li>
+										<li onclick="goTo('inverse-map');">1</li>
+                    <li onclick="goTo('inverse-map2');">2</li>
+										<li class="active">3</li>
 									</ul>
 									<div class="text-mask">
 										<h2>By 2100, Europe’s Adriatic sturgeon could lose 40 %  of  its distribution area.</h2>
@@ -424,8 +452,8 @@
 								<!-- article -->
 								<article class="article">
 									<div class="text-holder">
-										<h1><a href="#">Changes in biodiversity in Europe’s seas</a></h1>
-										<a href="#" class="btn btn-primary">explore the case study</a>
+										<h1><a href="images/EUBON-NorthSeaFishDiversity-Weatherdon17.pdf" target="_blank">Changes in biodiversity in Europe’s seas</a></h1>
+										<a href="images/EUBON-NorthSeaFishDiversity-Weatherdon17.pdf" target="_blank" class="btn btn-primary">explore the case study</a>
 									</div>
 									<div class="img-responsive">
 										<picture>
@@ -439,6 +467,54 @@
 					</div>
 				</div>
 			</section>
+
+      <section class="section procedure" data-nav="light" data-logo="light">
+        <!-- section bg (procedure) -->
+        <div class="bg-holder">
+          <img src="images/bg3.jpg" alt="How could I use it?">
+        </div>
+        <!-- section content (procedure) -->
+        <div class="section-holder">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 center-block">
+                <h1>North Sea species richness</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-9 pull-right">
+                <div class="slider js_slider -selected">
+                  <div class="frame js_frame">
+                    <ul class="slides js_slides">
+                      <li class="js_slide slide">
+                        <div class="c-pic-slide js_pic_slide" data-pic-url="images/changes_in_biodiversity_in_europes_seas/22.jpg" data-pic-name="Current species">
+                          <div class="c-pic-slide__picture" style="background-image: url('images/changes_in_biodiversity_in_europes_seas/22.jpg')"></div>
+                          <div class="c-pic-slide__separator"></div>
+                          <div class="c-pic-slide__name">Current species</div>
+                        </div>
+                      </li>
+                      <li class="js_slide slide">
+                        <div class="c-pic-slide js_pic_slide" data-pic-url="images/changes_in_biodiversity_in_europes_seas/22_2100.jpg" data-pic-name="Predicted species in 2100">
+                          <div class="c-pic-slide__picture" style="background-image: url('images/changes_in_biodiversity_in_europes_seas/22_2100.jpg')"></div>
+                          <div class="c-pic-slide__separator"></div>
+                          <div class="c-pic-slide__name">Predicted species in 2100</div>
+                        </div>
+                      </li>
+                      <li class="js_slide slide">
+                        <div class="c-pic-slide js_pic_slide" data-pic-url="images/changes_in_biodiversity_in_europes_seas/22_2100_percent.jpg" data-pic-name="% change in species composition">
+                          <div class="c-pic-slide__picture" style="background-image: url('images/changes_in_biodiversity_in_europes_seas/22_2100_percent.jpg')"></div>
+                          <div class="c-pic-slide__separator"></div>
+                          <div class="c-pic-slide__name">% change in species composition</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 			<div class="c-show-pic-modal is-hidden">
 				<div class="section-holder">
