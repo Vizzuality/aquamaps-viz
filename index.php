@@ -38,21 +38,21 @@
 	<div id="wrapper">
 		<!-- social networks -->
 		<ul class="social-networks text-center">
-			<li><a href="#" class="icon-eubon">EU BON</a></li>
-			<li><a href="#" class="icon-facebook">FACEBOOK</a></li>
-			<li><a href="#" class="icon-twitter">TWITTER</a></li>
-			<li><a href="#" class="icon-email">EMAIL</a></li>
+			<li><a href="http://biodiversity.eubon.eu/" target="_blank" class="icon-eubon">EU BON</a></li>
+			<li><a href="https://www.facebook.com/sharer/sharer.php" target="_blank" class="icon-facebook">FACEBOOK</a></li>
+			<li><a href="https://twitter.com/share?" target="_blank" class="icon-twitter">TWITTER</a></li>
+			<li><a href="mailto:eubon@mfn-berlin.de?Subject=AquaMaps" target="_blank" class="icon-email">EMAIL</a></li>
 		</ul>
 		<!-- section intro -->
 		<section class="section intro text-center" data-nav="light">
 			<!-- page logo -->
-			<div class="logo"><a href="#">AquaMaps</a></div>
+			<div class="logo"><a href="/">AquaMaps</a></div>
 			<!-- section bg (intro) -->
 			<div class="bg-holder">
 				<img src="images/bg1.jpg" alt="image description">
 			</div>
 			<!-- btn heatmaps -->
-			<a href="#" class="btn-heatmaps"><span class="hidden-xs">Heatmaps</span> <i class="icon-chevron-right"></i></a>
+			<a href="https://vizzuality.github.io/eubon-vizz/" target="_blank" class="btn-heatmaps"><span class="hidden-xs">Heatmaps</span> <i class="icon-chevron-right"></i></a>
 			<!-- section content (intro) -->
 			<div class="section-holder">
 				<div class="container">
@@ -72,7 +72,7 @@
 			<!-- top head -->
 			<div class="header text-center">
 				<!-- page logo -->
-				<div class="logo"><a href="#">AquaMaps</a></div>
+				<div class="logo"><a href="/">AquaMaps</a></div>
 			</div>
 			<!-- section services -->
 			<section class="section services" id="services" data-nav="light" data-logo="inverse">
@@ -92,7 +92,7 @@
 									</div>
 									<div class="text-col">
 										<p>From there you can explore diversity of several pre-defined groups, focus on the range extent of a specific species, or look at a list of species that may be present in a certain area. By combining expert knowledge and occurrence data, AquaMaps presents fairly accurate and valid representations of species distributions.</p>
-										<a href="#" class="btn btn-default">more info</a>
+										<a href="http://www.aquamaps.org/am_eubon/" target="_blank" class="btn btn-default">more info</a>
 									</div>
 								</div>
 							</div>
@@ -320,10 +320,6 @@
 							<li class="red">Indicator</li>
 						</ul>
 						<span class="title">XXX species suitability</span>
-					</div>
-					<div class="btn-area">
-						<a href="#" class="btn btn-info text-uppercase">Now</a>
-						<a href="#" class="btn btn-primary">2100</a>
 					</div>
 				</div>
 				<!-- section content (future) -->
