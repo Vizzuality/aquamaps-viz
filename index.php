@@ -418,9 +418,8 @@
 							<div class="col-xs-12 center-block graph text-right">
 								<div class="img-area">
 									<picture>
-										<source srcset="images/graph.png, images/graph-2x.png 2x" media="(min-width: 768px)">
-										<source srcset="images/graph-small.png, images/graph-small-2x.png 2x">
-										<img src="images/graph.png" alt="graph description">
+										<source srcset="images/graph_sturgeon.png, images/graph_sturgeon-2x.png 2x" media="(min-width: 768px)">
+										<img src="images/graph_sturgeon.png" alt="Sturgeon's area change">
 									</picture>
 								</div>
 								<div class="text-block">
