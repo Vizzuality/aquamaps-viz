@@ -16,21 +16,21 @@ $species = [
   ],
   [
     "key" => "crassostrea_gigas",
-    "name" => "Crassostrea gigas",
+    "name" => "Giant cupped oyster (<i>Crassostrea gigas</i>)",
     "pictures" => [
       [
         "name" => "Native Range",
-        "url" => "/images/species/crassostrea_gigas/exp_33_pic_W-Msc-140656_suitable.jpg"
+        "url" => "/images/species/crassostrea_gigas/exp_33_pic_W-Msc-140656.jpg"
       ],
       [
         "name" => "Suitable Habitat",
-        "url" => "/images/species/crassostrea_gigas/exp_33_pic_W-Msc-140656.jpg"
+        "url" => "/images/species/crassostrea_gigas/exp_33_pic_W-Msc-140656_suitable.jpg"
       ]
     ]
   ],
   [
     "key" => "mnemiopsis_leidyi",
-    "name" => "Mnemiopsis leidyi",
+    "name" => "Warty comb jelly (<i>Mnemiopsis leidyi</i>",
     "pictures" => [
       [
         "name" => "Native Range",
@@ -44,7 +44,7 @@ $species = [
   ],
   [
     "key" => "apogon_imberbis",
-    "name" => "Apogon Imberbis",
+    "name" => "Cardinal fish (<i>Apogon Imberbis</i>",
     "pictures" => [
       [
         "name" => "Native Range",
@@ -58,7 +58,7 @@ $species = [
   ],
   [
     "key" => "arnoglossus_ruepelli",
-    "name" => "Arnoglossus Ruepelli",
+    "name" => "Rüppell's scaldback (<i>Arnoglossus rueppelli</i>",
     "pictures" => [
       [
         "name" => "Native Range",
@@ -72,7 +72,7 @@ $species = [
   ],
   [
     "key" => "engraulis_encrasicolus",
-    "name" => "Engraulis Encrasicolus",
+    "name" => "European anchovy (<i>Engraulis encrasicolus</i>",
     "pictures" => [
       [
         "name" => "Native Range",
