@@ -395,7 +395,7 @@
 										<img src="images/graph_sturgeon.png" alt="Sturgeon's area change">
 									</picture>
 								</div>
-								<div class="text-block">
+								<div class="text-block" style="vertical-align: top;">
 									<!-- paging -->
 									<ul class="paging">
 										<li onclick="goTo('inverse-map');">1</li>
@@ -424,7 +424,7 @@
                     <img src="images/species/callinectes_sapidus/exp_7_pic_W-Bch-107379_native.jpg" alt="map description" width="100%">
                   </picture>
                 </div>
-                <div class="text-block add">
+                <div class="text-block add" style="vertical-align: bottom;">
                   <!-- paging -->
                   <ul class="paging">
                     <li onclick="goTo('inverse-map');">1</li>
@@ -447,14 +447,14 @@
 				<div class="section-holder">
 					<div class="container">
 						<div class="row">
-							<div class="col-xs-12 center-block graph">
+							<div class="col-xs-12 center-block graph text-right">
 								<div class="img-area">
 									<picture>
 										<source srcset="images/graph_carcharhinus.png, images/graph_carcharhinus-2x.png 2x" media="(min-width: 768px)">
 										<img src="images/graph_carcharhinus.png" alt="Sturgeon's area change">
 									</picture>
 								</div>
-								<div class="text-block">
+								<div class="text-block" style="vertical-align: top">
 									<!-- paging -->
 									<ul class="paging">
 										<li onclick="goTo('inverse-map');">1</li>
