@@ -365,7 +365,7 @@
 										<img src="images/species/acipenser_nacarii/pic_Fis-29589_native.jpg" alt="map description" width="100%">
 									</picture>
 								</div>
-								<div class="text-block add text-block-map">
+								<div class="text-block add">
 									<!-- paging -->
 									<ul class="paging">
 										<li class="active">1</li>
@@ -395,7 +395,7 @@
 										<img src="images/graph_sturgeon.png" alt="Sturgeon's area change">
 									</picture>
 								</div>
-								<div class="text-block text-block-graph">
+								<div class="text-block">
 									<!-- paging -->
 									<ul class="paging">
 										<li onclick="goTo('inverse-map');">1</li>
@@ -418,13 +418,13 @@
         <div class="section-holder">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12 center-block graph">
+              <div class="col-xs-12 center-block graph text-right">
                 <div class="img-area">
                   <picture>
                     <img src="images/species/callinectes_sapidus/exp_7_pic_W-Bch-107379_native.jpg" alt="map description" width="100%">
                   </picture>
                 </div>
-                <div class="text-block add text-block-map">
+                <div class="text-block add">
                   <!-- paging -->
                   <ul class="paging">
                     <li onclick="goTo('inverse-map');">1</li>
@@ -447,14 +447,14 @@
 				<div class="section-holder">
 					<div class="container">
 						<div class="row">
-							<div class="col-xs-12 center-block graph text-right">
+							<div class="col-xs-12 center-block graph">
 								<div class="img-area">
 									<picture>
 										<source srcset="images/graph_carcharhinus.png, images/graph_carcharhinus-2x.png 2x" media="(min-width: 768px)">
 										<img src="images/graph_carcharhinus.png" alt="Sturgeon's area change">
 									</picture>
 								</div>
-								<div class="text-block text-block-map">
+								<div class="text-block">
 									<!-- paging -->
 									<ul class="paging">
 										<li onclick="goTo('inverse-map');">1</li>
