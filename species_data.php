@@ -44,7 +44,7 @@ $species = [
   ],
   [
     "key" => "apogon_imberbis",
-    "name" => "Cardinal fish (<i>Apogon Imberbis</i>",
+    "name" => "Cardinal fish (<i>Apogon imberbis</i>",
     "pictures" => [
       [
         "name" => "Native Range",
