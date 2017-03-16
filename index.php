@@ -344,8 +344,8 @@
 								<!-- article -->
 								<article class="article">
 									<div class="text-holder">
-										<h1><a href="http://www.aquamaps.org/am_eubon/OtherSpeciesList.php?type=threatened" target="_blank">Climate impact  on Europe’s  threatened fish</a></h1>
-										<a href="http://www.aquamaps.org/am_eubon/OtherSpeciesList.php?type=threatened" target="_blank" class="btn btn-primary">explore the case study</a>
+										<h1><a href="http://www.aquamaps.org/am_eubon/OtherSpeciesList.php?type=threatened" target="_blank">Climate impact on Europe’s threatened fish</a></h1>
+										<a href="http://www.aquamaps.org/am_eubon/OtherSpeciesList.php?type=threatened" target="_blank" class="btn btn-primary">explore the tool</a>
 									</div>
 								</article>
 							</div>
@@ -373,7 +373,7 @@
 										<li onclick="goTo('inverse-graph');">3</li>
 									</ul>
 									<div class="text-mask">
-                    <h2><a href="http://www.aquamaps.org/am_eubon/premap.php?map=cached&SpecID=Fis-29589&cache=1&type_of_map=regular" target="_blank">Acipenser naccarii</a> Adriatic sturgeon (Critically endangered)</h2>
+                    <h2><a href="http://www.aquamaps.org/am_eubon/premap.php?map=cached&SpecID=Fis-29589&cache=1&type_of_map=regular" target="_blank">Adriatic sturgeon (<i>Acipenser naccarii</i></a> (Critically endangered)</h2>
 									</div>
 								</div>
 							</div>
