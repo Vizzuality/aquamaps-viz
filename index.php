@@ -365,7 +365,7 @@
 										<img src="images/species/acipenser_nacarii/pic_Fis-29589_native.jpg" alt="map description" width="100%">
 									</picture>
 								</div>
-								<div class="text-block add">
+								<div class="text-block add text-block-map">
 									<!-- paging -->
 									<ul class="paging">
 										<li class="active">1</li>
@@ -395,7 +395,7 @@
 										<img src="images/graph_sturgeon.png" alt="Sturgeon's area change">
 									</picture>
 								</div>
-								<div class="text-block">
+								<div class="text-block text-block-graph">
 									<!-- paging -->
 									<ul class="paging">
 										<li onclick="goTo('inverse-map');">1</li>
@@ -424,7 +424,7 @@
                     <img src="images/species/callinectes_sapidus/exp_7_pic_W-Bch-107379_native.jpg" alt="map description" width="100%">
                   </picture>
                 </div>
-                <div class="text-block add">
+                <div class="text-block add text-block-map">
                   <!-- paging -->
                   <ul class="paging">
                     <li onclick="goTo('inverse-map');">1</li>
@@ -454,7 +454,7 @@
 										<img src="images/graph_carcharhinus.png" alt="Sturgeon's area change">
 									</picture>
 								</div>
-								<div class="text-block">
+								<div class="text-block text-block-map">
 									<!-- paging -->
 									<ul class="paging">
 										<li onclick="goTo('inverse-map');">1</li>
