@@ -275,10 +275,10 @@
 												$planningToolPictures = [
 													"/images/planning_tool/MPA_Step1.png",
 													"/images/planning_tool/MPA_Step2.png",
-													"/images/planning_tool/MPA_Step3.png",
-													"/images/planning_tool/MPA_Step4.png",
+													"/images/planning_tool/MPA_step3.png",
+													"/images/planning_tool/MPA_step4.png",
 													"/images/planning_tool/MPA_Step5.png",
-													"/images/planning_tool/MPA_Step6.png",
+													"/images/planning_tool/MPA_step6.png",
 													"/images/planning_tool/MPA_Step7.png",
 													"/images/planning_tool/MPA_Step8.png",
 													"/images/planning_tool/MPA_Step8b.png",
