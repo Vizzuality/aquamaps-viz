@@ -455,8 +455,8 @@
                   <div class="img-responsive">
                     <a href="http://wcmc.io/North-Sea" target="_blank">
                       <picture>
-                        <source srcset="images/img2.jpg, images/img2-2x.jpg 2x">
-                        <img src="images/img2.jpg" alt="graph description">
+                        <source srcset="images/magazine.png, images/magazine-2x.png 2x">
+                        <img src="images/magazine.png" alt="Case study screenshot">
                       </picture>
                     </a>
 									</div>
