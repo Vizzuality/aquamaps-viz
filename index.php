@@ -92,7 +92,7 @@
 									</div>
 									<div class="text-col">
 										<p>From there you can explore diversity of several pre-defined groups, focus on the range extent of a specific species, or look at a list of species that may be present in a certain area. By combining expert knowledge and occurrence data, AquaMaps presents fairly accurate and valid representations of species distributions.</p>
-										<a href="http://www.aquamaps.org/am_eubon/" target="_blank" class="btn btn-default">more info</a>
+										<a href="http://www.aquamaps.org/am_eubon/" target="_blank" class="btn btn-default">explore AquaMaps</a>
 									</div>
 								</div>
 							</div>

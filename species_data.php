@@ -2,7 +2,7 @@
 $species = [
   [
     "key" => "callinectes_sapidus",
-    "name" => "Callinectes sapidus",
+    "name" => "Blue crab (<i>Callinectes sapidus</i>)",
     "pictures" => [
       [
         "name" => "Native Range",
