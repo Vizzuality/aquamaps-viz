@@ -369,11 +369,42 @@
 									<!-- paging -->
 									<ul class="paging">
 										<li class="active">1</li>
-                    <li onclick="goTo('inverse-map2');">2</li>
-										<li onclick="goTo('inverse-graph');">3</li>
+										<li onclick="goTo('inverse-graph');">2</li>
+                    <li onclick="goTo('inverse-map2');">3</li>
+										<li onclick="goTo('inverse-graph2');">4</li>
 									</ul>
 									<div class="text-mask">
                     <h2><a href="http://www.aquamaps.org/am_eubon/premap.php?map=cached&SpecID=Fis-29589&cache=1&type_of_map=regular" target="_blank">Adriatic sturgeon (<i>Acipenser naccarii</i></a> (Critically endangered)</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section graph -->
+			<section id="inverse-graph" class="section block inverse" data-nav="inverse" data-logo="inverse">
+				<!-- section content (graph) -->
+				<div class="section-holder">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 center-block graph text-right">
+								<div class="img-area">
+									<picture>
+										<source srcset="images/graph_sturgeon.png, images/graph_sturgeon-2x.png 2x" media="(min-width: 768px)">
+										<img src="images/graph_sturgeon.png" alt="Sturgeon's area change">
+									</picture>
+								</div>
+								<div class="text-block">
+									<!-- paging -->
+									<ul class="paging">
+										<li onclick="goTo('inverse-map');">1</li>
+										<li class="active">3</li>
+                    <li onclick="goTo('inverse-map2');">3</li>
+                    <li onclick="goTo('inverse-graph');">4</li>
+									</ul>
+									<div class="text-mask">
+										<h2>By 2100, Europe’s Adriatic sturgeon could lose 40% of its distribution area.</h2>
 									</div>
 								</div>
 							</div>
@@ -397,8 +428,9 @@
                   <!-- paging -->
                   <ul class="paging">
                     <li onclick="goTo('inverse-map');">1</li>
-                    <li class="active">2</li>
-                    <li onclick="goTo('inverse-graph');">3</li>
+                    <li onclick="goTo('inverse-graph');">2</li>
+                    <li class="active">3</li>
+                    <li onclick="goTo('inverse-graph2');">4</li>
                   </ul>
                   <div class="text-mask">
                     <h2><a href="http://www.aquamaps.org/am_eubon/premap.php?map=cached&SpecID=Fis-23061&expert_id=7&cache=1&type_of_map=regular" target="_blank">Carcharhinus longimanus</a> Oceanic whitetip shark (Vulnerable)</h2>
@@ -410,7 +442,7 @@
         </div>
       </section>
 			<!-- section graph -->
-			<section id="inverse-graph" class="section block inverse" data-nav="inverse" data-logo="inverse">
+			<section id="inverse-graph2" class="section block inverse" data-nav="inverse" data-logo="inverse">
 				<!-- section content (graph) -->
 				<div class="section-holder">
 					<div class="container">
@@ -418,19 +450,20 @@
 							<div class="col-xs-12 center-block graph text-right">
 								<div class="img-area">
 									<picture>
-										<source srcset="images/graph_sturgeon.png, images/graph_sturgeon-2x.png 2x" media="(min-width: 768px)">
-										<img src="images/graph_sturgeon.png" alt="Sturgeon's area change">
+										<source srcset="images/graph_carcharhinus.png, images/graph_carcharhinus-2x.png 2x" media="(min-width: 768px)">
+										<img src="images/graph_carcharhinus.png" alt="Sturgeon's area change">
 									</picture>
 								</div>
 								<div class="text-block">
 									<!-- paging -->
 									<ul class="paging">
 										<li onclick="goTo('inverse-map');">1</li>
-                    <li onclick="goTo('inverse-map2');">2</li>
-										<li class="active">3</li>
+                    <li onclick="goTo('inverse-graph');">2</li>
+                    <li onclick="goTo('inverse-map2');">3</li>
+										<li class="active">4</li>
 									</ul>
 									<div class="text-mask">
-										<h2>By 2100, Europe’s Adriatic sturgeon could lose 40% of its distribution area.</h2>
+										<h2>By 2100, Oceanic whitetip shark could lose 21% of its distribution area.</h2>
 									</div>
 								</div>
 							</div>
