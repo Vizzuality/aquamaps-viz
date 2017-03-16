@@ -302,7 +302,9 @@
 							</div>
             </div>
             <div class="row">
-              <a href="http://www.aquamaps.org/tools/mpa_wizard/details.php?area=EU" target="_blank" class="btn btn-default">explore tool</a>
+							<div class="col-xs-12 center-block">
+                <a href="http://www.aquamaps.org/tools/mpa_wizard/details.php?area=EU" target="_blank" class="btn btn-default">explore tool</a>
+              </div>
             </div>
 					</div>
 				</div>
