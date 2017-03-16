@@ -431,7 +431,7 @@
 										<li class="active">3</li>
 									</ul>
 									<div class="text-mask">
-										<h2>By 2100, Europe’s Adriatic sturgeon could lose 40 %  of  its distribution area.</h2>
+										<h2>By 2100, Europe’s Adriatic sturgeon could lose 40% of its distribution area.</h2>
 									</div>
 								</div>
 							</div>
@@ -449,14 +449,16 @@
 								<!-- article -->
 								<article class="article">
 									<div class="text-holder">
-										<h1><a href="images/EUBON-NorthSeaFishDiversity-Weatherdon17.pdf" target="_blank">Changes in biodiversity in Europe’s seas</a></h1>
-										<a href="images/EUBON-NorthSeaFishDiversity-Weatherdon17.pdf" target="_blank" class="btn btn-primary">explore the case study</a>
+										<h1>Changes in biodiversity in Europe’s seas</h1>
+										<a href="http://www.aquamaps.org/am_eubon/SpecRichLME.php" target="_blank" class="btn btn-primary">explore the tool</a>
 									</div>
-									<div class="img-responsive">
-										<picture>
-											<source srcset="images/img2.jpg, images/img2-2x.jpg 2x">
-											<img src="images/img2.jpg" alt="graph description">
-										</picture>
+                  <div class="img-responsive">
+                    <a href="http://wcmc.io/North-Sea" target="_blank">
+                      <picture>
+                        <source srcset="images/img2.jpg, images/img2-2x.jpg 2x">
+                        <img src="images/img2.jpg" alt="graph description">
+                      </picture>
+                    </a>
 									</div>
 								</article>
 							</div>
