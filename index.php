@@ -399,7 +399,7 @@
 									<!-- paging -->
 									<ul class="paging">
 										<li onclick="goTo('inverse-map');">1</li>
-										<li class="active">3</li>
+										<li class="active">2</li>
                     <li onclick="goTo('inverse-map2');">3</li>
                     <li onclick="goTo('inverse-graph');">4</li>
 									</ul>
