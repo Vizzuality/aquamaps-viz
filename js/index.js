@@ -3,10 +3,11 @@ $( window ).load(function() {
   procedureSelect = $('.procedure .js_select');
   procedureSliders = [];
   procedurePics = $('.procedure .js_pic_slide');
+  inversePaginators = $('.inverse .paging li');
   modal = $('.c-show-pic-modal');
 
   procedurePaginators.on('click', function () {
-    changeProcedurePage($(this).data('value'));
+    changeProcedurePage($(this).data('value'), 'procedure');
   });
 
   procedureSelect.on('change', function () {
@@ -15,6 +16,10 @@ $( window ).load(function() {
 
   procedurePics.on('click', function () {
     loadPicModal($(this).data('pic-url'), $(this).data('pic-name'));
+  });
+
+  inversePaginators.on('click', function () {
+    changeBlockPage($(this).data('value'), 'inverse');
   });
 
   $('.js_show_pic_modal_close').on('click', hideModal);
@@ -53,13 +58,15 @@ function hideModal () {
   modal.addClass('is-hidden');
 }
 
-function changeProcedurePage (page) {
-  var selectedPage = $('.procedure[data-page="' + page + '"]')
+function changeBlockPage (page, blockId) {
+  var selectedPage = $('.' + blockId +'[data-page="' + page + '"]');
 
   selectedPage.removeClass('is-hidden');
-  $('.procedure:not([data-page="' + page + '"])').addClass('is-hidden');
+  $('.' + blockId +':not([data-page="' + page + '"])').addClass('is-hidden');
 
-  loadProcedureSlider(selectedPage.find('.js_slider:first').data('specie-id'));
+  if (blockId === 'procedure') {
+    loadProcedureSlider(selectedPage.find('.js_slider:first').data('specie-id'));
+  }
 }
 
 function goTo (sectionId) {
