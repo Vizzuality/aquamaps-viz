@@ -354,7 +354,7 @@
 				</div>
 			</section>
 			<!-- section map -->
-			<section id="inverse-map" class="section block inverse" data-nav="inverse" data-logo="inverse">
+			<section id="inverse-map" class="section block inverse" data-nav="inverse" data-logo="inverse" data-page="1">
 				<!-- section content (map) -->
 				<div class="section-holder">
 					<div class="container">
@@ -368,10 +368,10 @@
 								<div class="text-block add">
 									<!-- paging -->
 									<ul class="paging">
-										<li class="active">1</li>
-										<li onclick="goTo('inverse-graph');">2</li>
-                    <li onclick="goTo('inverse-map2');">3</li>
-										<li onclick="goTo('inverse-graph2');">4</li>
+                    <li class="active" data-value="1">1</li>
+                    <li data-value="2">2</li>
+                    <li data-value="3">3</li>
+                    <li data-value="4">4</li>
 									</ul>
 									<div class="text-mask">
                     <h2><a href="http://www.aquamaps.org/am_eubon/premap.php?map=cached&SpecID=Fis-29589&cache=1&type_of_map=regular" target="_blank">Adriatic sturgeon (<i>Acipenser naccarii</i></a> (Critically endangered)</h2>
@@ -383,7 +383,7 @@
 				</div>
 			</section>
 			<!-- section graph -->
-			<section id="inverse-graph" class="section block inverse" data-nav="inverse" data-logo="inverse">
+			<section id="inverse-graph" class="section block inverse is-hidden" data-nav="inverse" data-logo="inverse" data-page="2">
 				<!-- section content (graph) -->
 				<div class="section-holder">
 					<div class="container">
@@ -398,10 +398,10 @@
 								<div class="text-block" style="vertical-align: top;">
 									<!-- paging -->
 									<ul class="paging">
-										<li onclick="goTo('inverse-map');">1</li>
-										<li class="active">2</li>
-                    <li onclick="goTo('inverse-map2');">3</li>
-                    <li onclick="goTo('inverse-graph');">4</li>
+                    <li data-value="1">1</li>
+                    <li class="active" data-value="2">2</li>
+                    <li data-value="3">3</li>
+                    <li data-value="4">4</li>
 									</ul>
 									<div class="text-mask">
 										<h2>By 2100, Europe’s Adriatic sturgeon could lose 40% of its distribution area.</h2>
@@ -413,7 +413,7 @@
 				</div>
 			</section>
       <!-- section map -->
-      <section id="inverse-map2" class="section block inverse" data-nav="inverse" data-logo="inverse">
+      <section id="inverse-map2" class="section block inverse is-hidden" data-nav="inverse" data-logo="inverse" data-page="3">
         <!-- section content (map) -->
         <div class="section-holder">
           <div class="container">
@@ -427,10 +427,10 @@
                 <div class="text-block add" style="vertical-align: bottom;">
                   <!-- paging -->
                   <ul class="paging">
-                    <li onclick="goTo('inverse-map');">1</li>
-                    <li onclick="goTo('inverse-graph');">2</li>
-                    <li class="active">3</li>
-                    <li onclick="goTo('inverse-graph2');">4</li>
+                    <li data-value="1">1</li>
+                    <li data-value="2">2</li>
+                    <li class="active" data-value="3">3</li>
+                    <li data-value="4">4</li>
                   </ul>
                   <div class="text-mask">
                     <h2><a href="http://www.aquamaps.org/am_eubon/premap.php?map=cached&SpecID=Fis-23061&expert_id=7&cache=1&type_of_map=regular" target="_blank">Carcharhinus longimanus</a> Oceanic whitetip shark (Vulnerable)</h2>
@@ -442,7 +442,7 @@
         </div>
       </section>
 			<!-- section graph -->
-			<section id="inverse-graph2" class="section block inverse" data-nav="inverse" data-logo="inverse">
+			<section id="inverse-graph2" class="section block inverse is-hidden" data-nav="inverse" data-logo="inverse" data-page="4">
 				<!-- section content (graph) -->
 				<div class="section-holder">
 					<div class="container">
@@ -457,10 +457,10 @@
 								<div class="text-block" style="vertical-align: top">
 									<!-- paging -->
 									<ul class="paging">
-										<li onclick="goTo('inverse-map');">1</li>
-                    <li onclick="goTo('inverse-graph');">2</li>
-                    <li onclick="goTo('inverse-map2');">3</li>
-										<li class="active">4</li>
+                    <li data-value="1">1</li>
+                    <li data-value="2">2</li>
+                    <li data-value="3">3</li>
+                    <li class="active" data-value="4">4</li>
 									</ul>
 									<div class="text-mask">
 										<h2>By 2100, Oceanic whitetip shark could lose 21% of its distribution area.</h2>
