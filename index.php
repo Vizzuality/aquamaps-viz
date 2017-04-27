@@ -147,7 +147,7 @@
 	                    <ul class="slides js_slides">
 												<?php foreach ($specie['pictures'] as $pictureId => $picture) :?>
 													<li class="js_slide slide">
-														<div class="c-pic-slide js_pic_slide" data-pic-url="<?= $picture['url'] ?>" data-pic-name="<?= $picture['name'] ?> of <?= $specie['name'] ?>">
+														<div class="c-pic-slide js_pic_slide" data-pic-url="<?= $picture['url'] ?>" data-pic-name="<?= $picture['name'] ?> of <?= $specie['name'] ?>"  data-id="procedure-1-<?= $pictureId ?>">
 															<div class="c-pic-slide__picture" style="background-image: url('<?= $picture['url'] ?>')"></div>
 															<div class="c-pic-slide__separator"></div>
 															<div class="c-pic-slide__name"><?= $picture['name'] ?></div>
@@ -211,7 +211,7 @@
 	                    <ul class="slides js_slides">
 												<?php foreach ($specie['pictures'] as $pictureId => $picture) :?>
 													<li class="js_slide slide">
-														<div class="c-pic-slide js_pic_slide" data-pic-url="<?= $picture['url'] ?>" data-pic-name="<?= $picture['name'] ?> of <?= $specie['name'] ?>">
+														<div class="c-pic-slide js_pic_slide" data-pic-url="<?= $picture['url'] ?>" data-pic-name="<?= $picture['name'] ?> of <?= $specie['name'] ?>" data-id="procedure-2-<?= $pictureId ?>">
 															<div class="c-pic-slide__picture" style="background-image: url('<?= $picture['url'] ?>')"></div>
 															<div class="c-pic-slide__separator"></div>
 															<div class="c-pic-slide__name"><?= $picture['name'] ?></div>
@@ -286,7 +286,7 @@
 											?>
 											<?php foreach ($planningToolPictures as $pictureId => $url) :?>
 												<li class="js_slide slide">
-													<div class="c-pic-slide js_pic_slide" data-pic-url="<?= $url ?>" data-pic-name="">
+													<div class="c-pic-slide js_pic_slide" data-pic-url="<?= $url ?>" data-pic-name=""  data-id="procedure-3-<?= $pictureId ?>">
 														<div class="c-pic-slide__picture" style="background-image: url('<?= $url ?>')"></div>
 													</div>
 												</li>
@@ -518,7 +518,7 @@
                   <div class="frame js_frame">
                     <ul class="slides js_slides">
                       <li class="js_slide slide">
-                        <div class="c-pic-slide js_pic_slide" data-pic-url="images/changes_in_biodiversity_in_europes_seas/22.jpg" data-pic-name="Current species">
+                        <div class="c-pic-slide js_pic_slide" data-pic-url="images/changes_in_biodiversity_in_europes_seas/22.jpg" data-pic-name="Current species" data-id="procedure-4-1">
                           <div class="c-pic-slide__picture" style="background-image: url('images/changes_in_biodiversity_in_europes_seas/22.jpg')"></div>
                           <div class="c-pic-slide__separator"></div>
                           <div class="c-pic-slide__name">Current species</div>
@@ -535,7 +535,7 @@
                         </div>
                       </li>
                       <li class="js_slide slide">
-                        <div class="c-pic-slide js_pic_slide" data-pic-url="images/changes_in_biodiversity_in_europes_seas/22_2100.jpg" data-pic-name="Predicted species in 2100">
+                        <div class="c-pic-slide js_pic_slide" data-pic-url="images/changes_in_biodiversity_in_europes_seas/22_2100.jpg" data-pic-name="Predicted species in 2100" data-id="procedure-4-2">
                           <div class="c-pic-slide__picture" style="background-image: url('images/changes_in_biodiversity_in_europes_seas/22_2100.jpg')"></div>
                           <div class="c-pic-slide__separator"></div>
                           <div class="c-pic-slide__name">Predicted species in 2100</div>
@@ -552,7 +552,7 @@
                         </div>
                       </li>
                       <li class="js_slide slide">
-                        <div class="c-pic-slide js_pic_slide" data-pic-url="images/changes_in_biodiversity_in_europes_seas/22_2100_percent.jpg" data-pic-name="% change in species composition">
+                        <div class="c-pic-slide js_pic_slide" data-pic-url="images/changes_in_biodiversity_in_europes_seas/22_2100_percent.jpg" data-pic-name="% change in species composition" data-id="procedure-4-3">
                           <div class="c-pic-slide__picture" style="background-image: url('images/changes_in_biodiversity_in_europes_seas/22_2100_percent.jpg')"></div>
                           <div class="c-pic-slide__separator"></div>
                           <div class="c-pic-slide__name">% change in species composition</div>
@@ -578,11 +578,18 @@
       </section>
 
 			<div class="c-show-pic-modal is-hidden">
+        <input class="js_pic_id" type="hidden" value=""/>
 				<div class="section-holder">
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12 center-block">
 								<div class="c-show-pic__picture js_show_pic"></div>
+                <div class="c-show-pic-modal__arrow -prev js_prev_pic">
+                  <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow"></use></svg>
+                </div>
+                <div class="c-show-pic-modal__arrow -next js_next_pic">
+                  <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow"></use></svg>
+                </div>
 							</div>
 							<div class="col-xs-12">
 								<div class="c-show-pic__name js_show_name"></div>

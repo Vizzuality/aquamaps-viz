@@ -14,7 +14,16 @@ $( window ).load(function() {
   });
 
   procedurePics.on('click', function () {
-    loadPicModal($(this).data('pic-url'), $(this).data('pic-name'));
+    loadPicModal($(this).data('id'), $(this).data('pic-url'), $(this).data('pic-name'));
+    showModal();
+  });
+
+  modal.find('.js_next_pic').on('click', function () {
+    nextModal();
+  });
+
+  modal.find('.js_prev_pic').on('click', function () {
+    prevModal();
   });
 
   $('.js_show_pic_modal_close').on('click', hideModal);
@@ -34,7 +43,8 @@ function loadProcedureSlider (specieId) {
   }
 }
 
-function loadPicModal (picUrl, picName) {
+function loadPicModal (picId, picUrl, picName) {
+  modal.find('.js_pic_id').val(picId);
   modal.find('.js_show_pic').css("background-image", "url('" + picUrl + "')");
   modal.find('.js_show_name').html(picName);
   if (picName === "") {
@@ -42,7 +52,6 @@ function loadPicModal (picUrl, picName) {
   } else {
       modal.removeClass("-no-legend");
   }
-  showModal();
 }
 
 function showModal () {
@@ -51,6 +60,30 @@ function showModal () {
 
 function hideModal () {
   modal.addClass('is-hidden');
+}
+
+function nextModal () {
+  var currentPictureId = modal.find('.js_pic_id').val();
+  var pic = $('.js_pic_slide[data-id="' + currentPictureId + '"]');
+
+  var next = pic.parent().next().find('.js_pic_slide');
+  if (next.length === 0) {
+    next = pic.parent().parent().children().first().find('.js_pic_slide');
+  }
+
+  loadPicModal(next.data('id'), next.data('pic-url'), next.data('pic-name'));
+}
+
+function prevModal () {
+  var currentPictureId = modal.find('.js_pic_id').val();
+  var pic = $('.js_pic_slide[data-id="' + currentPictureId + '"]');
+
+  var prev = pic.parent().prev().find('.js_pic_slide');
+  if (prev.length === 0) {
+    prev = pic.parent().parent().children().last().find('.js_pic_slide');
+  }
+
+  loadPicModal(prev.data('id'), prev.data('pic-url'), prev.data('pic-name'));
 }
 
 function changeProcedurePage (page) {
