@@ -522,6 +522,16 @@
                           <div class="c-pic-slide__picture" style="background-image: url('images/changes_in_biodiversity_in_europes_seas/22.jpg')"></div>
                           <div class="c-pic-slide__separator"></div>
                           <div class="c-pic-slide__name">Current species</div>
+                          <div class="c-pic-slide__legend">
+                            <img src="images/legend-colours.svg">
+                            <ul>
+                              <li>&gt;0.2</li>
+                              <li>0.3</li>
+                              <li>0.5</li>
+                              <li>0.7</li>
+                              <li>&lt;0.8</li>
+                            </ul>
+                          </div>
                         </div>
                       </li>
                       <li class="js_slide slide">
@@ -529,6 +539,16 @@
                           <div class="c-pic-slide__picture" style="background-image: url('images/changes_in_biodiversity_in_europes_seas/22_2100.jpg')"></div>
                           <div class="c-pic-slide__separator"></div>
                           <div class="c-pic-slide__name">Predicted species in 2100</div>
+                          <div class="c-pic-slide__legend">
+                            <img src="images/legend-colours.svg">
+                            <ul>
+                              <li>&gt;0.2</li>
+                              <li>0.3</li>
+                              <li>0.5</li>
+                              <li>0.7</li>
+                              <li>&lt;0.8</li>
+                            </ul>
+                          </div>
                         </div>
                       </li>
                       <li class="js_slide slide">
@@ -536,6 +556,16 @@
                           <div class="c-pic-slide__picture" style="background-image: url('images/changes_in_biodiversity_in_europes_seas/22_2100_percent.jpg')"></div>
                           <div class="c-pic-slide__separator"></div>
                           <div class="c-pic-slide__name">% change in species composition</div>
+                          <div class="c-pic-slide__legend">
+                            <img src="images/legend-colours.svg">
+                            <ul>
+                              <li>&gt;0.2</li>
+                              <li>0.3</li>
+                              <li>0.5</li>
+                              <li>0.7</li>
+                              <li>&lt;0.8</li>
+                            </ul>
+                          </div>
                         </div>
                       </li>
                     </ul>
