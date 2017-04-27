@@ -9,6 +9,10 @@
   align-items: center;
   z-index: 500;
 
+  .section-holder {
+    width: 100%;
+  }
+
   .c-show-pic-modal__close {
     position: absolute;
     top: 30px;

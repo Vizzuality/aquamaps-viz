@@ -502,6 +502,8 @@ p { margin: 0 0 12px; }
 
 .c-show-pic-modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; z-index: 500; }
 
+.c-show-pic-modal .section-holder { width: 100%; }
+
 .c-show-pic-modal .c-show-pic-modal__close { position: absolute; top: 30px; right: 30px; width: 54px; height: 54px; display: flex; justify-content: center; align-items: center; z-index: 2; }
 
 .c-show-pic-modal .c-show-pic-modal__close .icon { fill: #fff; width: 32px; height: 32px; cursor: pointer; }
