@@ -26,4 +26,20 @@
     color: rgba(#fff, 0.5);
     text-align: left;
   }
+
+  .c-pic-slide__legend {
+    text-align: left;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 160px;
+      padding: 0;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.43;
+      color: rgba(#fff, 0.5);
+      list-style: none;
+    }
+  }
 }
