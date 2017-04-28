@@ -504,7 +504,7 @@ p { margin: 0 0 12px; }
 
 .c-show-pic-modal .section-holder { width: 100%; }
 
-.c-show-pic-modal .c-show-pic-modal__close { position: absolute; top: 30px; right: 30px; width: 54px; height: 54px; display: flex; justify-content: center; align-items: center; z-index: 2; }
+.c-show-pic-modal .c-show-pic-modal__close { position: absolute; top: 0; right: 0; width: 54px; height: 54px; display: flex; justify-content: center; align-items: center; z-index: 2; }
 
 .c-show-pic-modal .c-show-pic-modal__close .icon { fill: #fff; width: 32px; height: 32px; cursor: pointer; }
 
@@ -518,7 +518,7 @@ p { margin: 0 0 12px; }
 
 .c-show-pic__picture { position: relative; width: 100%; height: 65vh; background-color: #142141; background-size: contain; background-repeat: no-repeat; background-position: center; z-index: 2; }
 
-.c-show-pic-modal__arrow { position: absolute; top: 0; bottom: 0; margin: auto; width: 40px; height: 40px; cursor: pointer; }
+.c-show-pic-modal__arrow { position: absolute; top: 0; bottom: 0; margin: auto; width: 40px; height: 40px; cursor: pointer; display: none; }
 
 .c-show-pic-modal__arrow .icon { fill: #ffffff; width: 100%; height: 100%; }
 
@@ -530,7 +530,11 @@ p { margin: 0 0 12px; }
 
 .c-show-pic-modal__arrow.-next .icon { transform: rotateZ(-90deg); }
 
+@media (min-width: 768px) { .c-show-pic-modal__arrow { display: block; } }
+
 .c-show-pic__name { width: 100%; font-family: PTSerif; font-size: 32px; font-weight: 700; line-height: 1.25; color: #ffffff; margin-top: 66px; }
+
+.c-show-pic__name a { color: inherit; text-decoration: underline; }
 
 @media (min-width: 768px) { .c-show-pic__name { width: 60%; } }
 
