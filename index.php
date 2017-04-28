@@ -147,7 +147,7 @@
 	                    <ul class="slides js_slides">
 												<?php foreach ($specie['pictures'] as $pictureId => $picture) :?>
 													<li class="js_slide slide">
-														<div class="c-pic-slide js_pic_slide" data-pic-url="<?= $picture['url'] ?>" data-pic-name="<?= $picture['name'] ?> of <?= $specie['name'] ?>"  data-id="procedure-1-<?= $pictureId ?>">
+														<div class="c-pic-slide js_pic_slide" data-pic-url="<?= $picture['url'] ?>" data-pic-name="<?= $picture['name'] ?> of <a href='<?= $specie['url'] ?>' target='_blank'><?= $specie['name'] ?></a>"  data-id="procedure-1-<?= $specie['key'] ?>-<?= $pictureId ?>">
 															<div class="c-pic-slide__picture" style="background-image: url('<?= $picture['url'] ?>')"></div>
 															<div class="c-pic-slide__separator"></div>
 															<div class="c-pic-slide__name"><?= $picture['name'] ?></div>
@@ -211,7 +211,7 @@
 	                    <ul class="slides js_slides">
 												<?php foreach ($specie['pictures'] as $pictureId => $picture) :?>
 													<li class="js_slide slide">
-														<div class="c-pic-slide js_pic_slide" data-pic-url="<?= $picture['url'] ?>" data-pic-name="<?= $picture['name'] ?> of <?= $specie['name'] ?>" data-id="procedure-2-<?= $pictureId ?>">
+														<div class="c-pic-slide js_pic_slide" data-pic-url="<?= $picture['url'] ?>" data-pic-name="<?= $picture['name'] ?> of <a href='<?= $specie['url'] ?>' target='_blank'><?= $specie['name'] ?></a>" data-id="procedure-2-<?= $specie['key'] ?>-<?= $pictureId ?>">
 															<div class="c-pic-slide__picture" style="background-image: url('<?= $picture['url'] ?>')"></div>
 															<div class="c-pic-slide__separator"></div>
 															<div class="c-pic-slide__name"><?= $picture['name'] ?></div>

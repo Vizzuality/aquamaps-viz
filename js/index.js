@@ -87,7 +87,7 @@ function prevModal () {
 }
 
 function changeProcedurePage (page) {
-  var selectedPage = $('.procedure[data-page="' + page + '"]')
+  var selectedPage = $('.procedure[data-page="' + page + '"]');
 
   selectedPage.removeClass('is-hidden');
   $('.procedure:not([data-page="' + page + '"])').addClass('is-hidden');

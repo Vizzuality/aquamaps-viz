@@ -16,8 +16,8 @@
 
   .c-show-pic-modal__close {
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 0;
+    right: 0;
     width: 54px;
     height: 54px;
     display: flex;
@@ -35,7 +35,7 @@
     @include media('>=screen-sm') {
       width: 104px;
       height: 104px;
-		}
+    }
   }
 
   .c-show-pic-modal__veil {
@@ -79,6 +79,7 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
+  display: none;
 
   .icon {
     fill: #ffffff;
@@ -101,6 +102,10 @@
       transform: rotateZ(-90deg);
     }
   }
+
+  @include media('>=screen-sm') {
+    display: block;
+  }
 }
 
 .c-show-pic__name {
@@ -111,6 +116,11 @@
   line-height: 1.25;
   color: #ffffff;
   margin-top: 66px;
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
 
   @include media('>=screen-sm') {
     width: 60%;
