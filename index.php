@@ -51,8 +51,6 @@
 			<div class="bg-holder">
 				<img src="images/bg1.jpg" alt="image description">
 			</div>
-			<!-- btn heatmaps -->
-			<a href="https://vizzuality.github.io/eubon-vizz/" target="_blank" class="btn-heatmaps"><span class="hidden-xs">Heatmaps</span> <i class="icon-chevron-right"></i></a>
 			<!-- section content (intro) -->
 			<div class="section-holder">
 				<div class="container">
