@@ -261,8 +261,8 @@
 										<li class="active" data-value="3">3</li>
 									</ul>
 									<div class="text-mask">
-										<p>MPA planning tool</p>
-                    <a href="http://www.aquamaps.org/tools/mpa_wizard/details.php?area=EU" target="_blank" class="btn btn-default">explore tool</a>
+										<p>See where to best place a new marine protected area (MPA) with respect to the species you want to protect</p>
+                    <a href="http://www.aquamaps.org/tools/mpa_wizard/details.php?area=EU" target="_blank" class="btn btn-default">explore the tool</a>
 									</div>
 								</div>
 							</div>
@@ -402,7 +402,7 @@
 										<li onclick="goTo('inverse-map');">1</li>
 										<li class="active">2</li>
                     <li onclick="goTo('inverse-map2');">3</li>
-                    <li onclick="goTo('inverse-graph');">4</li>
+                    <li onclick="goTo('inverse-graph2');">4</li>
 									</ul>
 									<div class="text-mask">
 										<h2>By 2100, Europe’s Adriatic sturgeon could lose 40% of its distribution area.</h2>
