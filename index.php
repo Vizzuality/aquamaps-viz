@@ -230,6 +230,7 @@
 											<option value="<?= $specie['key'] ?>"><?= $specie['name'] ?></option>
 										<?php endforeach ?>
 									</select>
+                  <svg class="icon icon-arrow"><use xlink:href="#icon-arrow"></use></svg>
 								</div>
 							</div>
 						</div>
