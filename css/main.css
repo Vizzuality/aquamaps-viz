@@ -548,6 +548,6 @@ p { margin: 0 0 12px; }
 
 .c-select label { display: block; margin-bottom: 3px; font-size: 14px; font-weight: 500; }
 
-.c-select select { width: 250px; height: 30px; padding-left: 10px; font-size: 12px; color: #ffffff; border: solid 2px #ffffff; background-color: transparent; border-radius: 0; outline: 0; }
+.c-select select { width: 280px; height: 30px; padding-left: 10px; font-size: 12px; color: #ffffff; border: solid 2px #ffffff; background-color: transparent; border-radius: 0; outline: 0; }
 
 .c-select .icon { position: absolute; bottom: 10px; right: 10px; margin: auto; fill: #fff; width: 10px; height: 10px; }
