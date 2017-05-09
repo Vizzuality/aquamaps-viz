@@ -129,6 +129,7 @@
 
 .c-show-pic__legend {
   margin-top: 12px;
+  text-align: left;
 
   .c-show-pic__legend-title {
     font-size: 14px;
@@ -137,9 +138,15 @@
     color: #ffffff;
   }
 
-  .c-show-pic__legend-img {
-    position: relative;
-    margin-top: 5px;
-    left: -9px;
+  .c-show-pic__legend-values {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    color: rgba(#fff, 0.5);
+    list-style: none;
   }
 }
