@@ -14,7 +14,13 @@ $( window ).load(function() {
   });
 
   procedurePics.on('click', function () {
-    loadPicModal($(this).data('id'), $(this).data('pic-url'), $(this).data('pic-name'));
+    loadPicModal(
+      $(this).data('id'),
+      $(this).data('pic-url'),
+      $(this).data('pic-name'),
+      $(this).data('legend-title'),
+      $(this).data('legend-values')
+    );
     showModal();
   });
 
@@ -39,18 +45,26 @@ function changeProcedureSpecie (specieId) {
 function loadProcedureSlider (specieId) {
   var slider = $('.procedure .js_slider[data-specie-id="' + specieId + '"]');
   if (slider.find('.slide').length > 2) {
-      lory(slider, {});
+    lory(slider, {});
   }
 }
 
-function loadPicModal (picId, picUrl, picName) {
+function loadPicModal (picId, picUrl, picName, legendTitle, legendValues) {
   modal.find('.js_pic_id').val(picId);
   modal.find('.js_show_pic').css("background-image", "url('" + picUrl + "')");
   modal.find('.js_show_name').html(picName);
-  if (picName === "") {
-      modal.addClass("-no-legend");
+  if (legendValues === 0) {
+    modal.addClass("-no-legend");
   } else {
-      modal.removeClass("-no-legend");
+    modal.removeClass("-no-legend");
+    modal.find('.js_legend_title').html(legendTitle);
+
+    var values = legendValues.split('|');
+    var valuesHTML = [];
+    $.each(values, function(i) {
+        valuesHTML.push('<li>' + values[i] + '</li>');
+    });
+    modal.find('.js_legend_values').html(valuesHTML.join(''));
   }
 }
 
@@ -71,7 +85,13 @@ function nextModal () {
     next = pic.parent().parent().children().first().find('.js_pic_slide');
   }
 
-  loadPicModal(next.data('id'), next.data('pic-url'), next.data('pic-name'));
+  loadPicModal(
+    next.data('id'),
+    next.data('pic-url'),
+    next.data('pic-name'),
+    next.data('legend-title'),
+    next.data('legend-values')
+  );
 }
 
 function prevModal () {
@@ -83,7 +103,13 @@ function prevModal () {
     prev = pic.parent().parent().children().last().find('.js_pic_slide');
   }
 
-  loadPicModal(prev.data('id'), prev.data('pic-url'), prev.data('pic-name'));
+  loadPicModal(
+    prev.data('id'),
+    prev.data('pic-url'),
+    prev.data('pic-name'),
+    prev.data('legend-title'),
+    prev.data('legend-values')
+  );
 }
 
 function changeProcedurePage (page) {
@@ -98,6 +124,6 @@ function changeProcedurePage (page) {
 function goTo (sectionId) {
   var offsetTop = $('#' + sectionId).offset().top;
   $('html, body').animate({
-      scrollTop: offsetTop
+    scrollTop: offsetTop
   }, 500);
 }
