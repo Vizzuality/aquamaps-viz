@@ -538,16 +538,16 @@ p { margin: 0 0 12px; }
 
 @media (min-width: 768px) { .c-show-pic__name { width: 60%; } }
 
-.c-show-pic__legend { margin-top: 12px; }
+.c-show-pic__legend { margin-top: 12px; text-align: left; }
 
 .c-show-pic__legend .c-show-pic__legend-title { font-size: 14px; font-weight: 500; line-height: 1.43; color: #ffffff; }
 
-.c-show-pic__legend .c-show-pic__legend-img { position: relative; margin-top: 5px; left: -9px; }
+.c-show-pic__legend .c-show-pic__legend-values { display: flex; justify-content: space-between; width: 160px; padding: 0; font-size: 14px; font-weight: 500; line-height: 1.43; color: rgba(255, 255, 255, 0.5); list-style: none; }
 
 .c-select { position: relative; }
 
 .c-select label { display: block; margin-bottom: 3px; font-size: 14px; font-weight: 500; }
 
-.c-select select { width: 250px; height: 30px; padding-left: 10px; font-size: 12px; color: #ffffff; border: solid 2px #ffffff; background-color: transparent; border-radius: 0; outline: 0; }
+.c-select select { width: 280px; height: 30px; padding-left: 10px; font-size: 12px; color: #ffffff; border: solid 2px #ffffff; background-color: transparent; border-radius: 0; outline: 0; }
 
 .c-select .icon { position: absolute; bottom: 10px; right: 10px; margin: auto; fill: #fff; width: 10px; height: 10px; }

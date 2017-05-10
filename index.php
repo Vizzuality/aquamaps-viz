@@ -147,7 +147,7 @@
 	                    <ul class="slides js_slides">
 												<?php foreach ($specie['pictures'] as $pictureId => $picture) :?>
 													<li class="js_slide slide">
-														<div class="c-pic-slide js_pic_slide" data-pic-url="<?= $picture['url'] ?>" data-pic-name="<?= $picture['name'] ?> of <a href='<?= $specie['url'] ?>' target='_blank'><?= $specie['name'] ?></a>"  data-id="procedure-1-<?= $specie['key'] ?>-<?= $pictureId ?>">
+														<div class="c-pic-slide js_pic_slide" data-pic-url="<?= $picture['url'] ?>" data-pic-name="<?= $picture['name'] ?> of <a href='<?= $specie['url'] ?>' target='_blank'><?= $specie['name'] ?></a>"  data-id="procedure-1-<?= $specie['key'] ?>-<?= $pictureId ?>" data-legend-title="Relative probabilities of occurrence" data-legend-values="&gt;0.2|0.3|0.5|0.7|&lt;0.8">
 															<div class="c-pic-slide__picture" style="background-image: url('<?= $picture['url'] ?>')"></div>
 															<div class="c-pic-slide__separator"></div>
 															<div class="c-pic-slide__name"><?= $picture['name'] ?></div>
@@ -211,7 +211,7 @@
 	                    <ul class="slides js_slides">
 												<?php foreach ($specie['pictures'] as $pictureId => $picture) :?>
 													<li class="js_slide slide">
-														<div class="c-pic-slide js_pic_slide" data-pic-url="<?= $picture['url'] ?>" data-pic-name="<?= $picture['name'] ?> of <a href='<?= $specie['url'] ?>' target='_blank'><?= $specie['name'] ?></a>" data-id="procedure-2-<?= $specie['key'] ?>-<?= $pictureId ?>">
+														<div class="c-pic-slide js_pic_slide" data-pic-url="<?= $picture['url'] ?>" data-pic-name="<?= $picture['name'] ?> of <a href='<?= $specie['url'] ?>' target='_blank'><?= $specie['name'] ?></a>" data-id="procedure-2-<?= $specie['key'] ?>-<?= $pictureId ?>" data-legend-title="Relative probabilities of occurrence" data-legend-values="&gt;0.2|0.3|0.5|0.7|&lt;0.8">
 															<div class="c-pic-slide__picture" style="background-image: url('<?= $picture['url'] ?>')"></div>
 															<div class="c-pic-slide__separator"></div>
 															<div class="c-pic-slide__name"><?= $picture['name'] ?></div>
@@ -230,6 +230,7 @@
 											<option value="<?= $specie['key'] ?>"><?= $specie['name'] ?></option>
 										<?php endforeach ?>
 									</select>
+                  <svg class="icon icon-arrow"><use xlink:href="#icon-arrow"></use></svg>
 								</div>
 							</div>
 						</div>
@@ -260,8 +261,8 @@
 										<li class="active" data-value="3">3</li>
 									</ul>
 									<div class="text-mask">
-										<p>MPA planning tool</p>
-                    <a href="http://www.aquamaps.org/tools/mpa_wizard/details.php?area=EU" target="_blank" class="btn btn-default">explore tool</a>
+										<p>See where to best place a new marine protected area (MPA) with respect to the species you want to protect</p>
+                    <a href="http://www.aquamaps.org/tools/mpa_wizard/details.php?area=EU" target="_blank" class="btn btn-default">explore the tool</a>
 									</div>
 								</div>
 							</div>
@@ -286,7 +287,7 @@
 											?>
 											<?php foreach ($planningToolPictures as $pictureId => $url) :?>
 												<li class="js_slide slide">
-													<div class="c-pic-slide js_pic_slide" data-pic-url="<?= $url ?>" data-pic-name=""  data-id="procedure-3-<?= $pictureId ?>">
+													<div class="c-pic-slide js_pic_slide" data-pic-url="<?= $url ?>" data-pic-name=""  data-id="procedure-3-<?= $pictureId ?>" data-legend-title="" data-legend-values="0">
 														<div class="c-pic-slide__picture" style="background-image: url('<?= $url ?>')"></div>
 													</div>
 												</li>
@@ -374,7 +375,7 @@
 										<li onclick="goTo('inverse-graph2');">4</li>
 									</ul>
 									<div class="text-mask">
-                    <h2><a href="http://www.aquamaps.org/am_eubon/premap.php?map=cached&SpecID=Fis-29589&cache=1&type_of_map=regular" target="_blank">Adriatic sturgeon (<i>Acipenser naccarii</i></a> (Critically endangered)</h2>
+                    <h2><a href="http://www.aquamaps.org/am_eubon/premap.php?map=cached&SpecID=Fis-29589&cache=1&type_of_map=regular" target="_blank">Adriatic sturgeon (<i>Acipenser naccarii, endangered</i>)</a></h2>
 									</div>
 								</div>
 							</div>
@@ -401,10 +402,10 @@
 										<li onclick="goTo('inverse-map');">1</li>
 										<li class="active">2</li>
                     <li onclick="goTo('inverse-map2');">3</li>
-                    <li onclick="goTo('inverse-graph');">4</li>
+                    <li onclick="goTo('inverse-graph2');">4</li>
 									</ul>
 									<div class="text-mask">
-										<h2>By 2100, Europe’s Adriatic sturgeon could lose 40% of its distribution area.</h2>
+										<h2>By 2100 Europe's Adriatic sturgeon could lose 49% of its current distribution area but gain new suitable area (~38.4% based on predicted 2100 distribution).</h2>
 									</div>
 								</div>
 							</div>
@@ -421,7 +422,7 @@
               <div class="col-xs-12 center-block graph text-right">
                 <div class="img-area">
                   <picture>
-                    <img src="images/species/callinectes_sapidus/exp_7_pic_W-Bch-107379_native.jpg" alt="map description" width="100%">
+                    <img src="images/species/carcharhinus_longimanus/exp_7_pic_Fis-23061_native.jpg" alt="map description" width="100%">
                   </picture>
                 </div>
                 <div class="text-block add" style="vertical-align: bottom;">
@@ -433,7 +434,7 @@
                     <li onclick="goTo('inverse-graph2');">4</li>
                   </ul>
                   <div class="text-mask">
-                    <h2><a href="http://www.aquamaps.org/am_eubon/premap.php?map=cached&SpecID=Fis-23061&expert_id=7&cache=1&type_of_map=regular" target="_blank">Carcharhinus longimanus</a> Oceanic whitetip shark (Vulnerable)</h2>
+                    <h2><a href="http://www.aquamaps.org/am_eubon/premap.php?map=cached&SpecID=Fis-23061&expert_id=7&cache=1&type_of_map=regular" target="_blank">Oceanic whitetip shark (<i>Carcharhinus longimanus, vulnerable</i>)</a></h2>
                   </div>
                 </div>
               </div>
@@ -463,7 +464,7 @@
 										<li class="active">4</li>
 									</ul>
 									<div class="text-mask">
-										<h2>By 2100, Oceanic whitetip shark could lose 21% of its distribution area.</h2>
+										<h2>By 2100 decreased habitat suitability of the oceanic whitetip shark could be as high as 67% of its current distribution area. It gains new suitable habitat in the northeast Atlantic (~21% based on predicted 2100 distribution).</h2>
 									</div>
 								</div>
 							</div>
@@ -518,52 +519,52 @@
                   <div class="frame js_frame">
                     <ul class="slides js_slides">
                       <li class="js_slide slide">
-                        <div class="c-pic-slide js_pic_slide" data-pic-url="images/changes_in_biodiversity_in_europes_seas/22.jpg" data-pic-name="Current species" data-id="procedure-4-1">
+                        <div class="c-pic-slide js_pic_slide" data-pic-url="images/changes_in_biodiversity_in_europes_seas/22.jpg" data-pic-name="Current species" data-id="procedure-4-1" data-legend-title="Species counts" data-legend-values="&gt;9|55|85|115|&lt;165">
                           <div class="c-pic-slide__picture" style="background-image: url('images/changes_in_biodiversity_in_europes_seas/22.jpg')"></div>
                           <div class="c-pic-slide__separator"></div>
-                          <div class="c-pic-slide__name">Current species</div>
+                          <div class="c-pic-slide__name">Current species richness</div>
                           <div class="c-pic-slide__legend">
                             <img src="images/legend-colours.svg">
                             <ul>
-                              <li>&gt;0.2</li>
-                              <li>0.3</li>
-                              <li>0.5</li>
-                              <li>0.7</li>
-                              <li>&lt;0.8</li>
+                              <li>&gt;9</li>
+                              <li>55</li>
+                              <li>85</li>
+                              <li>115</li>
+                              <li>&lt;165</li>
                             </ul>
                           </div>
                         </div>
                       </li>
                       <li class="js_slide slide">
-                        <div class="c-pic-slide js_pic_slide" data-pic-url="images/changes_in_biodiversity_in_europes_seas/22_2100.jpg" data-pic-name="Predicted species in 2100" data-id="procedure-4-2">
+                        <div class="c-pic-slide js_pic_slide" data-pic-url="images/changes_in_biodiversity_in_europes_seas/22_2100.jpg" data-pic-name="Predicted species in 2100" data-id="procedure-4-2" data-legend-title="Species counts" data-legend-values="&gt;9|55|85|115|&lt;165">
                           <div class="c-pic-slide__picture" style="background-image: url('images/changes_in_biodiversity_in_europes_seas/22_2100.jpg')"></div>
                           <div class="c-pic-slide__separator"></div>
                           <div class="c-pic-slide__name">Predicted species in 2100</div>
                           <div class="c-pic-slide__legend">
                             <img src="images/legend-colours.svg">
                             <ul>
-                              <li>&gt;0.2</li>
-                              <li>0.3</li>
-                              <li>0.5</li>
-                              <li>0.7</li>
-                              <li>&lt;0.8</li>
+                              <li>&gt;9</li>
+                              <li>55</li>
+                              <li>85</li>
+                              <li>115</li>
+                              <li>&lt;165</li>
                             </ul>
                           </div>
                         </div>
                       </li>
                       <li class="js_slide slide">
-                        <div class="c-pic-slide js_pic_slide" data-pic-url="images/changes_in_biodiversity_in_europes_seas/22_2100_percent.jpg" data-pic-name="% change in species composition" data-id="procedure-4-3">
+                        <div class="c-pic-slide js_pic_slide" data-pic-url="images/changes_in_biodiversity_in_europes_seas/22_2100_percent.jpg" data-pic-name="% change in species composition" data-id="procedure-4-3" data-legend-title="" data-legend-values="&gt;0|9|25|49|&lt;100">
                           <div class="c-pic-slide__picture" style="background-image: url('images/changes_in_biodiversity_in_europes_seas/22_2100_percent.jpg')"></div>
                           <div class="c-pic-slide__separator"></div>
                           <div class="c-pic-slide__name">% change in species composition</div>
                           <div class="c-pic-slide__legend">
                             <img src="images/legend-colours.svg">
                             <ul>
-                              <li>&gt;0.2</li>
-                              <li>0.3</li>
-                              <li>0.5</li>
-                              <li>0.7</li>
-                              <li>&lt;0.8</li>
+                              <li>&gt;0</li>
+                              <li>9</li>
+                              <li>25</li>
+                              <li>49</li>
+                              <li>&lt;100</li>
                             </ul>
                           </div>
                         </div>
@@ -596,8 +597,9 @@
 							</div>
 							<div class="col-xs-12">
 								<div class="c-show-pic__legend">
-									<div class="c-show-pic__legend-title">Relative probabilities of occurrence</div>
-									<img class="c-show-pic__legend-img" src="images/legend.svg" />
+									<div class="c-show-pic__legend-title js_legend_title"></div>
+                  <img src="images/legend-colours.svg">
+                  <ul class="c-show-pic__legend-values js_legend_values"></ul>
 								</div>
 							</div>
 						</div>
