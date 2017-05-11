@@ -252,7 +252,10 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-xs-12 col-sm-9 pull-right">
+              <div class="col-xs-12 col-sm-5 pull-right">
+                <img src="/images/planning_tool/MPA_Step8.png" width="100%" />
+              </div>
+							<div class="col-xs-12 col-sm-4 pull-right">
 								<div class="text-block">
 									<!-- paging -->
 									<ul class="paging">
@@ -267,42 +270,6 @@
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-xs-12 col-sm-9 pull-right">
-								<div class="slider js_slider -selected" data-specie-id="-1">
-	                <div class="frame js_frame">
-                    <ul class="slides js_slides">
-											<?php
-												$planningToolPictures = [
-													"/images/planning_tool/MPA_Step1.png",
-													"/images/planning_tool/MPA_Step2.png",
-													"/images/planning_tool/MPA_step3.png",
-													"/images/planning_tool/MPA_step4.png",
-													"/images/planning_tool/MPA_Step5.png",
-													"/images/planning_tool/MPA_step6.png",
-													"/images/planning_tool/MPA_Step7.png",
-													"/images/planning_tool/MPA_Step8.png",
-													"/images/planning_tool/MPA_Step8b.png",
-												]
-											?>
-											<?php foreach ($planningToolPictures as $pictureId => $url) :?>
-												<li class="js_slide slide">
-													<div class="c-pic-slide js_pic_slide" data-pic-url="<?= $url ?>" data-pic-name=""  data-id="procedure-3-<?= $pictureId ?>" data-legend-title="" data-legend-values="0">
-														<div class="c-pic-slide__picture" style="background-image: url('<?= $url ?>')"></div>
-													</div>
-												</li>
-											<?php endforeach ?>
-                    </ul>
-	                </div>
-	                <span class="js_prev prev">
-										<svg class="icon icon-arrow"><use xlink:href="#icon-arrow"></use></svg>
-									</span>
-	                <span class="js_next next">
-										<svg class="icon icon-arrow"><use xlink:href="#icon-arrow"></use></svg>
-									</span>
-		            </div>
-							</div>
-            </div>
 					</div>
 				</div>
 			</section>
