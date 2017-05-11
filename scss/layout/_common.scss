@@ -802,7 +802,7 @@
 		@include media('>=screen-sm') {
 			@include absolute(0, 10%, 4%);
 			margin: 0 20px;
-			z-index: -1;
+			z-index: 1;
 		}
 		@include media('>=screen-md') {
 			left: 16.5%;
@@ -813,10 +813,12 @@
 		}
 	}
 	.text-block {
+		position: relative;
 		overflow: hidden;
 		margin: 0 auto;
 		text-align: left;
 		width: 250px;
+		z-index: 2;
 		@include media('>=screen-sm') {
 			margin: 0 -5% 0 0;
 		}
@@ -831,13 +833,13 @@
 			vertical-align: top;
 			margin: 0;
 			@include media('>=screen-sm') {
-				margin: 30px 0 10px 5%;
+				margin: 30px 0 10px 0;
 				width: 340px;
 			}
 			@include media('>=screen-md') {
 				width: 470px;
 				margin-top: 57px;
-				margin: 57px 0 10px 8.6%;
+				margin: 57px 0 10px 0;
 			}
 			@include media('>=screen-lg') {
 				width: 593px;
@@ -845,6 +847,11 @@
 		}
 		.text-mask {
 			overflow: hidden;
+		}
+		.map-mask {
+			background-color: $body-bg;
+			padding: 10px 10px 10px 0;
+			margin-top: -10px;
 		}
 		h2 {
 			&:last-child {
@@ -856,6 +863,62 @@
 		@include media('>=screen-md') {
 			padding-bottom: 9px;
 			margin-bottom: 18px;
+		}
+	}
+	.section-map-legend {
+		display: inline-block;
+		width: 50%;
+		margin-top: 5px;
+
+		.section-map-legend__title {
+			font-family: $font-family-sans-serif;
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 1.43;
+			color: $brand-primary;
+			margin-bottom: 4px;
+		}
+
+		.section-map-legend__values ul {
+			display: flex;
+			justify-content: space-between;
+			width: 160px;
+			padding: 0;
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 1.43;
+			color: rgba($brand-primary, 0.3);
+			list-style: none;
+		}
+	}
+	.section-map-buttons {
+		float: right;
+		display: inline-flex;
+		justify-content: flex-end;
+		vertical-align: top;
+		width: 50%;
+		margin-top: 10px;
+
+		> div {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 70px;
+			height: 30px;
+			border: solid 2px $brand-primary;
+			font-family: $font-family-sans-serif;
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 1.43;
+			text-align: center;
+			color: $brand-primary;
+			margin-left: 20px;
+			cursor: pointer;
+
+			&.-selected {
+				color: $white;
+				background-color: $brand-primary;
+			}
 		}
 	}
 }

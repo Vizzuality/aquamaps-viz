@@ -365,16 +365,31 @@
 									<picture>
 										<img src="images/species/acipenser_nacarii/pic_Fis-29589_native.jpg" alt="map description" width="100%">
 									</picture>
+                  <div class="section-map-legend">
+                    <div class="section-map-legend__title">Relative probabilities of occurrence</div>
+                    <div class="section-map-legend__values">
+                      <img src="images/legend-colours.svg">
+                      <ul>
+                        <li>&gt;0.2</li>
+                        <li>0.3</li>
+                        <li>0.5</li>
+                        <li>0.7</li>
+                        <li>&lt;0.8</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="section-map-buttons">
+                    <div class="js-inverse-graph-map-switcher -selected" data-section-id="inverse-map" data-map-url="images/species/acipenser_nacarii/pic_Fis-29589_native.jpg">NOW</div>
+                    <div class="js-inverse-graph-map-switcher" data-section-id="inverse-map" data-map-url="images/species/acipenser_nacarii/pic_Fis-29589_y2100.jpg">2100</div>
+                  </div>
 								</div>
 								<div class="text-block add">
 									<!-- paging -->
 									<ul class="paging">
 										<li class="active">1</li>
 										<li onclick="goTo('inverse-graph');">2</li>
-                    <li onclick="goTo('inverse-map2');">3</li>
-										<li onclick="goTo('inverse-graph2');">4</li>
 									</ul>
-									<div class="text-mask">
+									<div class="text-mask map-mask">
                     <h2><a href="http://www.aquamaps.org/am_eubon/premap.php?map=cached&SpecID=Fis-29589&cache=1&type_of_map=regular" target="_blank">Adriatic sturgeon (<i>Acipenser naccarii, endangered</i>)</a></h2>
 									</div>
 								</div>
@@ -401,11 +416,9 @@
 									<ul class="paging">
 										<li onclick="goTo('inverse-map');">1</li>
 										<li class="active">2</li>
-                    <li onclick="goTo('inverse-map2');">3</li>
-                    <li onclick="goTo('inverse-graph2');">4</li>
 									</ul>
 									<div class="text-mask">
-										<h2>By 2100 Europe's Adriatic sturgeon could lose 49% of its current distribution area but gain new suitable area (~38.4% based on predicted 2100 distribution).</h2>
+                    <h2>By 2100 Europe's Adriatic sturgeon could lose 49% of its current distribution area but gain new suitable area. <span>(~38.4% based on predicted 2100 distribution)</span></h2>
 									</div>
 								</div>
 							</div>
@@ -419,21 +432,36 @@
         <div class="section-holder">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12 center-block graph text-right">
+              <div class="col-xs-12 center-block graph">
                 <div class="img-area">
                   <picture>
                     <img src="images/species/carcharhinus_longimanus/exp_7_pic_Fis-23061_native.jpg" alt="map description" width="100%">
                   </picture>
+                  <div class="section-map-legend">
+                    <div class="section-map-legend__title">Relative probabilities of occurrence</div>
+                    <div class="section-map-legend__values">
+                      <img src="images/legend-colours.svg">
+                      <ul>
+                        <li>&gt;0.2</li>
+                        <li>0.3</li>
+                        <li>0.5</li>
+                        <li>0.7</li>
+                        <li>&lt;0.8</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="section-map-buttons">
+                    <div class="js-inverse-graph-map-switcher -selected" data-section-id="inverse-map2" data-map-url="images/species/carcharhinus_longimanus/exp_7_pic_Fis-23061_native.jpg">NOW</div>
+                    <div class="js-inverse-graph-map-switcher" data-section-id="inverse-map2" data-map-url="images/species/carcharhinus_longimanus/exp_7_pic_Fis-23061_y2100.jpg">2100</div>
+                  </div>
                 </div>
-                <div class="text-block add" style="vertical-align: bottom;">
+                <div class="text-block add">
                   <!-- paging -->
                   <ul class="paging">
-                    <li onclick="goTo('inverse-map');">1</li>
-                    <li onclick="goTo('inverse-graph');">2</li>
-                    <li class="active">3</li>
-                    <li onclick="goTo('inverse-graph2');">4</li>
+                    <li class="active">1</li>
+                    <li onclick="goTo('inverse-graph2');">2</li>
                   </ul>
-                  <div class="text-mask">
+                  <div class="text-mask map-mask">
                     <h2><a href="http://www.aquamaps.org/am_eubon/premap.php?map=cached&SpecID=Fis-23061&expert_id=7&cache=1&type_of_map=regular" target="_blank">Oceanic whitetip shark (<i>Carcharhinus longimanus, vulnerable</i>)</a></h2>
                   </div>
                 </div>
@@ -458,13 +486,11 @@
 								<div class="text-block" style="vertical-align: top">
 									<!-- paging -->
 									<ul class="paging">
-										<li onclick="goTo('inverse-map');">1</li>
-                    <li onclick="goTo('inverse-graph');">2</li>
-                    <li onclick="goTo('inverse-map2');">3</li>
-										<li class="active">4</li>
+                    <li onclick="goTo('inverse-map2');">1</li>
+										<li class="active">2</li>
 									</ul>
 									<div class="text-mask">
-										<h2>By 2100 decreased habitat suitability of the oceanic whitetip shark could be as high as 67% of its current distribution area. It gains new suitable habitat in the northeast Atlantic (~21% based on predicted 2100 distribution).</h2>
+                    <h2>By 2100 decreased habitat suitability of the oceanic whitetip shark could be as high as 67% of its current distribution area. It gains new suitable habitat in the northeast Atlantic. <span>(~21% based on predicted 2100 distribution)</span></h2>
 									</div>
 								</div>
 							</div>

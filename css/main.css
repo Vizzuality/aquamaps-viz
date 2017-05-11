@@ -86,6 +86,8 @@ h2 { line-height: 27px; color: #fff; margin: 0 0 17px; }
 
 @media (min-width: 1200px) { h2 { font-size: 32px; line-height: 40px; margin: 0 0 30px; } }
 
+h2 span { font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; line-height: 1.43; color: rgba(0, 86, 137, 0.5); }
+
 p { margin: 0 0 12px; }
 
 @media (min-width: 992px) { p { margin: 0 0 16px; } }
@@ -437,13 +439,13 @@ p { margin: 0 0 12px; }
 
 @media (max-width: 767px) { .section.block .img-area { height: auto !important; } }
 
-@media (min-width: 768px) { .section.block .img-area { position: absolute; left: 10%; top: 0; right: 4%; bottom: auto; margin: 0 20px; z-index: -1; } }
+@media (min-width: 768px) { .section.block .img-area { position: absolute; left: 10%; top: 0; right: 4%; bottom: auto; margin: 0 20px; z-index: 1; } }
 
 @media (min-width: 992px) { .section.block .img-area { left: 16.5%; right: 8.3%; } }
 
 .section.block .img-area img { max-width: 100%; display: block; height: auto; }
 
-.section.block .text-block { overflow: hidden; margin: 0 auto; text-align: left; width: 250px; }
+.section.block .text-block { position: relative; overflow: hidden; margin: 0 auto; text-align: left; width: 250px; z-index: 2; }
 
 @media (min-width: 768px) { .section.block .text-block { margin: 0 -5% 0 0; } }
 
@@ -453,17 +455,31 @@ p { margin: 0 0 12px; }
 
 .section.block .text-block.add { vertical-align: top; margin: 0; }
 
-@media (min-width: 768px) { .section.block .text-block.add { margin: 30px 0 10px 5%; width: 340px; } }
+@media (min-width: 768px) { .section.block .text-block.add { margin: 30px 0 10px 0; width: 340px; } }
 
-@media (min-width: 992px) { .section.block .text-block.add { width: 470px; margin-top: 57px; margin: 57px 0 10px 8.6%; } }
+@media (min-width: 992px) { .section.block .text-block.add { width: 470px; margin-top: 57px; margin: 57px 0 10px 0; } }
 
 @media (min-width: 1200px) { .section.block .text-block.add { width: 593px; } }
 
 .section.block .text-block .text-mask { overflow: hidden; }
 
+.section.block .text-block .map-mask { background-color: #e1f1f4; padding: 10px 10px 10px 0; margin-top: -10px; }
+
 .section.block .text-block h2:last-child { margin: 0; }
 
 @media (min-width: 992px) { .section.block .paging { padding-bottom: 9px; margin-bottom: 18px; } }
+
+.section.block .section-map-legend { display: inline-block; width: 50%; margin-top: 5px; }
+
+.section.block .section-map-legend .section-map-legend__title { font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; line-height: 1.43; color: #005689; margin-bottom: 4px; }
+
+.section.block .section-map-legend .section-map-legend__values ul { display: flex; justify-content: space-between; width: 160px; padding: 0; font-size: 14px; font-weight: 500; line-height: 1.43; color: rgba(0, 86, 137, 0.3); list-style: none; }
+
+.section.block .section-map-buttons { float: right; display: inline-flex; justify-content: flex-end; vertical-align: top; width: 50%; margin-top: 10px; }
+
+.section.block .section-map-buttons > div { display: flex; justify-content: center; align-items: center; width: 70px; height: 30px; border: solid 2px #005689; font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; line-height: 1.43; text-align: center; color: #005689; margin-left: 20px; cursor: pointer; }
+
+.section.block .section-map-buttons > div.-selected { color: #fff; background-color: #005689; }
 
 .slider { display: none; position: relative; }
 
