@@ -4,6 +4,7 @@ $( window ).load(function() {
   procedureSliders = [];
   procedurePics = $('.procedure .js_pic_slide');
   modal = $('.c-show-pic-modal');
+  mapSwitchers = $('.js-inverse-graph-map-switcher');
 
   procedurePaginators.on('click', function () {
     changeProcedurePage($(this).data('value'));
@@ -33,6 +34,10 @@ $( window ).load(function() {
   });
 
   $('.js_show_pic_modal_close').on('click', hideModal);
+
+  mapSwitchers.on('click', function () {
+    changeSectionMap($(this), $(this).data('section-id'), $(this).data('map-url'));
+  });
 });
 
 function changeProcedureSpecie (specieId) {
@@ -126,4 +131,11 @@ function goTo (sectionId) {
   $('html, body').animate({
     scrollTop: offsetTop
   }, 500);
+}
+
+function changeSectionMap (element, sectionId, mapUrl) {
+    $('#' + sectionId + ' .js-inverse-graph-map-switcher').removeClass('-selected');
+    element.addClass('-selected');
+
+    $('#' + sectionId + ' .img-area picture img').attr('src', mapUrl);
 }

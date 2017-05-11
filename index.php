@@ -252,7 +252,10 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-xs-12 col-sm-9 pull-right">
+              <div class="col-xs-12 col-sm-5 pull-right">
+                <img src="/images/planning_tool/MPA_Step8.png" width="100%" />
+              </div>
+							<div class="col-xs-12 col-sm-4 pull-right">
 								<div class="text-block">
 									<!-- paging -->
 									<ul class="paging">
@@ -267,42 +270,6 @@
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-xs-12 col-sm-9 pull-right">
-								<div class="slider js_slider -selected" data-specie-id="-1">
-	                <div class="frame js_frame">
-                    <ul class="slides js_slides">
-											<?php
-												$planningToolPictures = [
-													"/images/planning_tool/MPA_Step1.png",
-													"/images/planning_tool/MPA_Step2.png",
-													"/images/planning_tool/MPA_step3.png",
-													"/images/planning_tool/MPA_step4.png",
-													"/images/planning_tool/MPA_Step5.png",
-													"/images/planning_tool/MPA_step6.png",
-													"/images/planning_tool/MPA_Step7.png",
-													"/images/planning_tool/MPA_Step8.png",
-													"/images/planning_tool/MPA_Step8b.png",
-												]
-											?>
-											<?php foreach ($planningToolPictures as $pictureId => $url) :?>
-												<li class="js_slide slide">
-													<div class="c-pic-slide js_pic_slide" data-pic-url="<?= $url ?>" data-pic-name=""  data-id="procedure-3-<?= $pictureId ?>" data-legend-title="" data-legend-values="0">
-														<div class="c-pic-slide__picture" style="background-image: url('<?= $url ?>')"></div>
-													</div>
-												</li>
-											<?php endforeach ?>
-                    </ul>
-	                </div>
-	                <span class="js_prev prev">
-										<svg class="icon icon-arrow"><use xlink:href="#icon-arrow"></use></svg>
-									</span>
-	                <span class="js_next next">
-										<svg class="icon icon-arrow"><use xlink:href="#icon-arrow"></use></svg>
-									</span>
-		            </div>
-							</div>
-            </div>
 					</div>
 				</div>
 			</section>
@@ -365,16 +332,31 @@
 									<picture>
 										<img src="images/species/acipenser_nacarii/pic_Fis-29589_native.jpg" alt="map description" width="100%">
 									</picture>
+                  <div class="section-map-legend">
+                    <div class="section-map-legend__title">Relative probabilities of occurrence</div>
+                    <div class="section-map-legend__values">
+                      <img src="images/legend-colours.svg">
+                      <ul>
+                        <li>&gt;0.2</li>
+                        <li>0.3</li>
+                        <li>0.5</li>
+                        <li>0.7</li>
+                        <li>&lt;0.8</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="section-map-buttons">
+                    <div class="js-inverse-graph-map-switcher -selected" data-section-id="inverse-map" data-map-url="images/species/acipenser_nacarii/pic_Fis-29589_native.jpg">NOW</div>
+                    <div class="js-inverse-graph-map-switcher" data-section-id="inverse-map" data-map-url="images/species/acipenser_nacarii/pic_Fis-29589_y2100.jpg">2100</div>
+                  </div>
 								</div>
 								<div class="text-block add">
 									<!-- paging -->
 									<ul class="paging">
 										<li class="active">1</li>
 										<li onclick="goTo('inverse-graph');">2</li>
-                    <li onclick="goTo('inverse-map2');">3</li>
-										<li onclick="goTo('inverse-graph2');">4</li>
 									</ul>
-									<div class="text-mask">
+									<div class="text-mask map-mask">
                     <h2><a href="http://www.aquamaps.org/am_eubon/premap.php?map=cached&SpecID=Fis-29589&cache=1&type_of_map=regular" target="_blank">Adriatic sturgeon (<i>Acipenser naccarii, endangered</i>)</a></h2>
 									</div>
 								</div>
@@ -401,11 +383,9 @@
 									<ul class="paging">
 										<li onclick="goTo('inverse-map');">1</li>
 										<li class="active">2</li>
-                    <li onclick="goTo('inverse-map2');">3</li>
-                    <li onclick="goTo('inverse-graph2');">4</li>
 									</ul>
 									<div class="text-mask">
-										<h2>By 2100 Europe's Adriatic sturgeon could lose 49% of its current distribution area but gain new suitable area (~38.4% based on predicted 2100 distribution).</h2>
+                    <h2>By 2100 Europe's Adriatic sturgeon could lose 49% of its current distribution area but gain new suitable area. <span>(~38.4% based on predicted 2100 distribution)</span></h2>
 									</div>
 								</div>
 							</div>
@@ -419,21 +399,36 @@
         <div class="section-holder">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12 center-block graph text-right">
+              <div class="col-xs-12 center-block graph">
                 <div class="img-area">
                   <picture>
                     <img src="images/species/carcharhinus_longimanus/exp_7_pic_Fis-23061_native.jpg" alt="map description" width="100%">
                   </picture>
+                  <div class="section-map-legend">
+                    <div class="section-map-legend__title">Relative probabilities of occurrence</div>
+                    <div class="section-map-legend__values">
+                      <img src="images/legend-colours.svg">
+                      <ul>
+                        <li>&gt;0.2</li>
+                        <li>0.3</li>
+                        <li>0.5</li>
+                        <li>0.7</li>
+                        <li>&lt;0.8</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="section-map-buttons">
+                    <div class="js-inverse-graph-map-switcher -selected" data-section-id="inverse-map2" data-map-url="images/species/carcharhinus_longimanus/exp_7_pic_Fis-23061_native.jpg">NOW</div>
+                    <div class="js-inverse-graph-map-switcher" data-section-id="inverse-map2" data-map-url="images/species/carcharhinus_longimanus/exp_7_pic_Fis-23061_y2100.jpg">2100</div>
+                  </div>
                 </div>
-                <div class="text-block add" style="vertical-align: bottom;">
+                <div class="text-block add">
                   <!-- paging -->
                   <ul class="paging">
-                    <li onclick="goTo('inverse-map');">1</li>
-                    <li onclick="goTo('inverse-graph');">2</li>
-                    <li class="active">3</li>
-                    <li onclick="goTo('inverse-graph2');">4</li>
+                    <li class="active">1</li>
+                    <li onclick="goTo('inverse-graph2');">2</li>
                   </ul>
-                  <div class="text-mask">
+                  <div class="text-mask map-mask">
                     <h2><a href="http://www.aquamaps.org/am_eubon/premap.php?map=cached&SpecID=Fis-23061&expert_id=7&cache=1&type_of_map=regular" target="_blank">Oceanic whitetip shark (<i>Carcharhinus longimanus, vulnerable</i>)</a></h2>
                   </div>
                 </div>
@@ -458,13 +453,11 @@
 								<div class="text-block" style="vertical-align: top">
 									<!-- paging -->
 									<ul class="paging">
-										<li onclick="goTo('inverse-map');">1</li>
-                    <li onclick="goTo('inverse-graph');">2</li>
-                    <li onclick="goTo('inverse-map2');">3</li>
-										<li class="active">4</li>
+                    <li onclick="goTo('inverse-map2');">1</li>
+										<li class="active">2</li>
 									</ul>
 									<div class="text-mask">
-										<h2>By 2100 decreased habitat suitability of the oceanic whitetip shark could be as high as 67% of its current distribution area. It gains new suitable habitat in the northeast Atlantic (~21% based on predicted 2100 distribution).</h2>
+                    <h2>By 2100 decreased habitat suitability of the oceanic whitetip shark could be as high as 67% of its current distribution area. It gains new suitable habitat in the northeast Atlantic. <span>(~21% based on predicted 2100 distribution)</span></h2>
 									</div>
 								</div>
 							</div>
