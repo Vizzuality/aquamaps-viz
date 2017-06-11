@@ -355,7 +355,7 @@
 										<li onclick="goTo('inverse-graph');">2</li>
 									</ul>
 									<div class="text-mask map-mask">
-                    <h2><a href="http://www.aquamaps.org/am_eubon/premap.php?map=cached&SpecID=Fis-29589&cache=1&type_of_map=regular" target="_blank">Adriatic sturgeon (<i>Acipenser naccarii, endangered</i>)</a></h2>
+                    <h2><a href="http://www.aquamaps.org/am_eubon/premap.php?map=cached&SpecID=Fis-29589&cache=1&type_of_map=regular" target="_blank">Adriatic sturgeon (<i>Acipenser naccarii</i>, endangered)</a></h2>
 									</div>
 								</div>
 							</div>
@@ -427,7 +427,7 @@
                     <li onclick="goTo('inverse-graph2');">2</li>
                   </ul>
                   <div class="text-mask map-mask">
-                    <h2><a href="http://www.aquamaps.org/am_eubon/premap.php?map=cached&SpecID=Fis-23061&expert_id=7&cache=1&type_of_map=regular" target="_blank">Oceanic whitetip shark (<i>Carcharhinus longimanus, vulnerable</i>)</a></h2>
+                    <h2><a href="http://www.aquamaps.org/am_eubon/premap.php?map=cached&SpecID=Fis-23061&expert_id=7&cache=1&type_of_map=regular" target="_blank">Oceanic whitetip shark (<i>Carcharhinus longimanus</i>, vulnerable)</a></h2>
                   </div>
                 </div>
               </div>
