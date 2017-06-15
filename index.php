@@ -166,7 +166,7 @@
 									</select>
 									<svg class="icon icon-arrow"><use xlink:href="#icon-arrow"></use></svg>
 								</div>
-                <div class="section-map-legend">
+                <div class="section-map-legend pull-right">
                   <div class="section-map-legend__title-light">Relative probabilities of occurrence</div>
                   <div class="section-map-legend__values-light">
                     <img src="images/legend-colours.svg">
