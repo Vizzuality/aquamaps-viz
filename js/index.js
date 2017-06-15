@@ -127,10 +127,7 @@ function changeProcedurePage (page) {
 }
 
 function goTo (sectionId) {
-  var offsetTop = $('#' + sectionId).offset().top;
-  $('html, body').animate({
-    scrollTop: offsetTop
-  }, 500);
+  document.location.href='#' + sectionId;
 }
 
 function changeSectionMap (element, sectionId, mapUrl) {
