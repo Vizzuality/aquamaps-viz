@@ -126,6 +126,10 @@ p { margin: 0 0 12px; }
   color: #005689;
 }
 
+.social-networks.inverse .aquamaps-link {
+  color: #fff;
+}
+
 @media (min-width: 768px) { .social-networks { left: 20px; bottom: 40px; } }
 
 @media (min-width: 992px) { .social-networks { left: 30px; } }
