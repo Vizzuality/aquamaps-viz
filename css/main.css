@@ -469,11 +469,11 @@ p { margin: 0 0 12px; }
 
 @media (min-width: 992px) { .section.block .paging { padding-bottom: 9px; margin-bottom: 18px; } }
 
-.section.block .section-map-legend { display: inline-block; width: 50%; margin-top: 5px; }
+.section-map-legend { display: inline-block; width: 50%; margin-top: 5px; }
 
-.section.block .section-map-legend .section-map-legend__title { font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; line-height: 1.43; color: #005689; margin-bottom: 4px; }
+.section-map-legend .section-map-legend__title { font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; line-height: 1.43; color: #005689; margin-bottom: 4px; }
 
-.section.block .section-map-legend .section-map-legend__values ul { display: flex; justify-content: space-between; width: 160px; padding: 0; font-size: 14px; font-weight: 500; line-height: 1.43; color: rgba(0, 86, 137, 0.3); list-style: none; }
+.section-map-legend .section-map-legend__values ul { display: flex; justify-content: space-between; width: 160px; padding: 0; font-size: 14px; font-weight: 500; line-height: 1.43; color: rgba(0, 86, 137, 0.3); list-style: none; }
 
 .section.block .section-map-buttons { float: right; display: inline-flex; justify-content: flex-end; vertical-align: top; width: 50%; margin-top: 10px; }
 

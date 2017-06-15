@@ -166,20 +166,20 @@
 									</select>
 									<svg class="icon icon-arrow"><use xlink:href="#icon-arrow"></use></svg>
 								</div>
-							</div>
-              <div class="section-map-legend">
-                <div class="section-map-legend__title">Relative probabilities of occurrence</div>
-                <div class="section-map-legend__values">
-                  <img src="images/legend-colours.svg">
-                  <ul>
-                    <li>&gt;0.2</li>
-                    <li>0.3</li>
-                    <li>0.5</li>
-                    <li>0.7</li>
-                    <li>&lt;0.8</li>
-                  </ul>
+                <div class="section-map-legend pull-right">
+                  <div class="section-map-legend__title">Relative probabilities of occurrence</div>
+                  <div class="section-map-legend__values">
+                    <img src="images/legend-colours.svg">
+                    <ul>
+                      <li>&gt;0.2</li>
+                      <li>0.3</li>
+                      <li>0.5</li>
+                      <li>0.7</li>
+                      <li>&lt;0.8</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
+							</div>
 						</div>
 					</div>
 				</div>
