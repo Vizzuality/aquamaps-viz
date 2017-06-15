@@ -38,7 +38,7 @@
 	<div id="wrapper">
 		<!-- social networks -->
     <ul class="social-networks text-center">
-      <li><a href="http://www.aquamaps.org/am_eubon/" target="_blank">AquaMaps</a></li>
+      <li><a href="http://www.aquamaps.org/am_eubon/" target="_blank" class="aquamaps-link">AquaMaps</a></li>
 			<li><a href="http://biodiversity.eubon.eu/" target="_blank" class="icon-eubon">EU BON</a></li>
 			<li><a href="https://www.facebook.com/sharer/sharer.php" target="_blank" class="icon-facebook">FACEBOOK</a></li>
 			<li><a href="https://twitter.com/share?" target="_blank" class="icon-twitter">TWITTER</a></li>

@@ -116,6 +116,16 @@ p { margin: 0 0 12px; }
 /* social networks styles */
 .social-networks { position: fixed; bottom: 20px; left: 10px; width: 30px; max-height: 70%; overflow: hidden; z-index: 200; }
 
+.social-networks .aquamaps-link {
+  font-size: 20px;
+  line-height: 8em;
+  transform: rotate(-90.0deg);
+  -moz-transform: rotate(-90.0deg);  /* FF3.5+ */
+  -o-transform: rotate(-90.0deg);  /* Opera 10.5 */
+  -webkit-transform: rotate(-90.0deg);  /* Saf3.1+, Chrome */
+  color: #005689;
+}
+
 @media (min-width: 768px) { .social-networks { left: 20px; bottom: 40px; } }
 
 @media (min-width: 992px) { .social-networks { left: 30px; } }
@@ -123,6 +133,7 @@ p { margin: 0 0 12px; }
 @media (min-width: 1200px) { .social-networks { bottom: 50px; left: 35px; } }
 
 @media (min-width: 1280px) { .social-networks { bottom: 61px; left: 52px; } }
+
 
 .social-networks.inverse li a { color: #005689; }
 
