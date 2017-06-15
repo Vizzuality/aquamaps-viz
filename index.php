@@ -37,7 +37,8 @@
 	<!-- main container of all the page elements -->
 	<div id="wrapper">
 		<!-- social networks -->
-		<ul class="social-networks text-center">
+    <ul class="social-networks text-center">
+      <li><a href="http://www.aquamaps.org/am_eubon/" target="_blank">AquaMaps</a></li>
 			<li><a href="http://biodiversity.eubon.eu/" target="_blank" class="icon-eubon">EU BON</a></li>
 			<li><a href="https://www.facebook.com/sharer/sharer.php" target="_blank" class="icon-facebook">FACEBOOK</a></li>
 			<li><a href="https://twitter.com/share?" target="_blank" class="icon-twitter">TWITTER</a></li>
@@ -67,11 +68,6 @@
 		</section>
 		<!-- contain main informative part of the site -->
 		<main role="main" id="main">
-			<!-- top head -->
-			<div class="header text-center">
-				<!-- page logo -->
-				<div class="logo"><a href="/">AquaMaps</a></div>
-			</div>
 			<!-- section services -->
 			<section class="section services" id="services" data-nav="light" data-logo="inverse">
 				<!-- section bg (services) -->
