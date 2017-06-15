@@ -343,11 +343,11 @@
                     <div class="section-map-legend__values">
                       <img src="images/legend-colours.svg">
                       <ul>
-                        <li>&gt;0.19</li>
-                        <li>0.39</li>
-                        <li>0.59</li>
-                        <li>0.79</li>
-                        <li>&lt;1.0</li>
+                        <li>&gt;0.2</li>
+                        <li>0.3</li>
+                        <li>0.5</li>
+                        <li>0.7</li>
+                        <li>&lt;0.8</li>
                       </ul>
                     </div>
                   </div>
@@ -415,11 +415,11 @@
                     <div class="section-map-legend__values">
                       <img src="images/legend-colours.svg">
                       <ul>
-                        <li>&gt;0.19</li>
-                        <li>0.39</li>
-                        <li>0.59</li>
-                        <li>0.79</li>
-                        <li>&lt;1.0</li>
+                        <li>&gt;0.2</li>
+                        <li>0.3</li>
+                        <li>0.5</li>
+                        <li>0.7</li>
+                        <li>&lt;0.8</li>
                       </ul>
                     </div>
                   </div>
