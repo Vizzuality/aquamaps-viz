@@ -516,7 +516,7 @@
                    Sea by the year 2100. As temperature increases, bony fish
                    with a preference for deeper waters may move away from the area.
                 </p>
-							  <a href="http://www.aquamaps.org/am_eubon/SpecRichLME.php" target="_blank" class="btn btn-primary">explore the tool</a>
+							  <a href="http://www.aquamaps.org/am_eubon/SpecRichLME.php" target="_blank" class="btn btn-default">explore the tool</a>
               </div>
             </div>
             <div class="row">
