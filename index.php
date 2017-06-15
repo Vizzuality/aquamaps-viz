@@ -319,8 +319,7 @@
 								<!-- article -->
 								<article class="article">
 									<div class="text-holder">
-										<h1><a href="http://www.aquamaps.org/am_eubon/OtherSpeciesList.php?type=threatened" target="_blank">Climate impact on Europe’s threatened fish</a></h1>
-										<a href="http://www.aquamaps.org/am_eubon/OtherSpeciesList.php?type=threatened" target="_blank" class="btn btn-primary">explore the tool</a>
+										<h1><a href="http://www.aquamaps.org/am_eubon/OtherSpeciesList.php?type=threatened" target="_blank">See how climate impacts Europe’s threatened fish</a></h1>
 									</div>
 								</article>
 							</div>
@@ -344,11 +343,11 @@
                     <div class="section-map-legend__values">
                       <img src="images/legend-colours.svg">
                       <ul>
-                        <li>&gt;0.2</li>
-                        <li>0.3</li>
-                        <li>0.5</li>
-                        <li>0.7</li>
-                        <li>&lt;0.8</li>
+                        <li>&gt;0.19</li>
+                        <li>0.39</li>
+                        <li>0.59</li>
+                        <li>0.79</li>
+                        <li>&lt;1.0</li>
                       </ul>
                     </div>
                   </div>
@@ -416,11 +415,11 @@
                     <div class="section-map-legend__values">
                       <img src="images/legend-colours.svg">
                       <ul>
-                        <li>&gt;0.2</li>
-                        <li>0.3</li>
-                        <li>0.5</li>
-                        <li>0.7</li>
-                        <li>&lt;0.8</li>
+                        <li>&gt;0.19</li>
+                        <li>0.39</li>
+                        <li>0.59</li>
+                        <li>0.79</li>
+                        <li>&lt;1.0</li>
                       </ul>
                     </div>
                   </div>
@@ -437,6 +436,7 @@
                   </ul>
                   <div class="text-mask map-mask">
                     <h2><a href="http://www.aquamaps.org/am_eubon/premap.php?map=cached&SpecID=Fis-23061&expert_id=7&cache=1&type_of_map=regular" target="_blank">Oceanic whitetip shark (<i>Carcharhinus longimanus</i>, vulnerable)</a></h2>
+										<a href="http://www.aquamaps.org/am_eubon/OtherSpeciesList.php?type=threatened" target="_blank" class="btn btn-primary">explore the tool</a>
                   </div>
                 </div>
               </div>
