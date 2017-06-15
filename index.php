@@ -483,7 +483,6 @@
 								<article class="article">
 									<div class="text-holder">
 										<h1>Changes in biodiversity in Europe’s seas</h1>
-										<a href="http://www.aquamaps.org/am_eubon/SpecRichLME.php" target="_blank" class="btn btn-primary">explore the tool</a>
 									</div>
                   <div class="img-responsive">
                     <a href="http://wcmc.io/North-Sea" target="_blank">
@@ -510,7 +509,14 @@
           <div class="container">
             <div class="row">
               <div class="col-xs-12 col-sm-6 center-block">
-                <h1>North Sea species richness</h1>
+                <h3>The North Sea example</h3>
+                <p>Richness maps for the relatively shallow North Sea show that
+                   bony fish are mostly found along the shallow coasts. Species
+                   richness decreases in the central deepest part of the North
+                   Sea by the year 2100. As temperature increases, bony fish
+                   with a preference for deeper waters may move away from the area.
+                </p>
+							  <a href="http://www.aquamaps.org/am_eubon/SpecRichLME.php" target="_blank" class="btn btn-primary">explore the tool</a>
               </div>
             </div>
             <div class="row">
@@ -539,7 +545,7 @@
                         <div class="c-pic-slide js_pic_slide" data-pic-url="images/changes_in_biodiversity_in_europes_seas/22_2100.jpg" data-pic-name="Predicted species in 2100" data-id="procedure-4-2" data-legend-title="Species counts" data-legend-values="&gt;9|55|85|115|&lt;165">
                           <div class="c-pic-slide__picture" style="background-image: url('images/changes_in_biodiversity_in_europes_seas/22_2100.jpg')"></div>
                           <div class="c-pic-slide__separator"></div>
-                          <div class="c-pic-slide__name">Predicted species in 2100</div>
+                          <div class="c-pic-slide__name">Predicted species richness in 2100</div>
                           <div class="c-pic-slide__legend">
                             <img src="images/legend-colours.svg">
                             <ul>
