@@ -295,7 +295,7 @@
 							<li class="orange">Indicator</li>
 							<li class="red">Indicator</li>
 						</ul>
-						<span class="title">XXX species suitability</span>
+						<span class="title">species suitability</span>
 					</div>
 				</div>
 				<!-- section content (future) -->
