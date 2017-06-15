@@ -482,7 +482,7 @@
 								<!-- article -->
 								<article class="article">
 									<div class="text-holder">
-										<h1>Changes in biodiversity in Europe’s seas</h1>
+										<h1>See how biodiversity may change in Europe’s seas</h1>
 									</div>
                   <div class="img-responsive">
                     <a href="http://wcmc.io/North-Sea" target="_blank">
