@@ -116,20 +116,6 @@ p { margin: 0 0 12px; }
 /* social networks styles */
 .social-networks { position: fixed; bottom: 20px; left: 10px; width: 30px; max-height: 70%; overflow: hidden; z-index: 200; }
 
-.social-networks .aquamaps-link {
-  font-size: 20px;
-  line-height: 8em;
-  transform: rotate(-90.0deg);
-  -moz-transform: rotate(-90.0deg);  /* FF3.5+ */
-  -o-transform: rotate(-90.0deg);  /* Opera 10.5 */
-  -webkit-transform: rotate(-90.0deg);  /* Saf3.1+, Chrome */
-  color: #fff;
-}
-
-.social-networks.inverse .aquamaps-link {
-  color: #005689;
-}
-
 @media (min-width: 768px) { .social-networks { left: 20px; bottom: 40px; } }
 
 @media (min-width: 992px) { .social-networks { left: 30px; } }
@@ -137,7 +123,6 @@ p { margin: 0 0 12px; }
 @media (min-width: 1200px) { .social-networks { bottom: 50px; left: 35px; } }
 
 @media (min-width: 1280px) { .social-networks { bottom: 61px; left: 52px; } }
-
 
 .social-networks.inverse li a { color: #005689; }
 
@@ -484,21 +469,28 @@ p { margin: 0 0 12px; }
 
 @media (min-width: 992px) { .section.block .paging { padding-bottom: 9px; margin-bottom: 18px; } }
 
-.section-map-legend { display: inline-block; width: 50%; margin-top: 5px; }
+.section.block .section-map-legend { display: inline-block; width: 50%; margin-top: 5px; }
 
-.section-map-legend .section-map-legend__title { font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; line-height: 1.43; color: #005689; margin-bottom: 4px; }
+.section.block .section-map-legend .section-map-legend__title { font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; line-height: 1.43; color: #005689; margin-bottom: 4px; }
 
-.section-map-legend .section-map-legend__values ul { display: flex; justify-content: space-between; width: 160px; padding: 0; font-size: 14px; font-weight: 500; line-height: 1.43; color: rgba(0, 86, 137, 0.3); list-style: none; }
-
-.section-map-legend .section-map-legend__title-light { font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; line-height: 1.43; color: #FFFFFF; margin-bottom: 4px; }
-
-.section-map-legend .section-map-legend__values-light ul { display: flex; justify-content: space-between; width: 160px; padding: 0; font-size: 14px; font-weight: 500; line-height: 1.43; color: rgba(255, 255, 255, 0.3); list-style: none; }
+.section.block .section-map-legend .section-map-legend__values ul { display: flex; justify-content: space-between; width: 220px; padding: 0; font-size: 14px; font-weight: 500; line-height: 1.43; color: rgba(0, 86, 137, 0.3); list-style: none; }
 
 .section.block .section-map-buttons { float: right; display: inline-flex; justify-content: flex-end; vertical-align: top; width: 50%; margin-top: 10px; }
 
 .section.block .section-map-buttons > div { display: flex; justify-content: center; align-items: center; width: 70px; height: 30px; border: solid 2px #005689; font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; line-height: 1.43; text-align: center; color: #005689; margin-left: 20px; cursor: pointer; }
 
 .section.block .section-map-buttons > div.-selected { color: #fff; background-color: #005689; }
+
+/* section map legend styles */
+.section-map-legend { display: inline-block; width: 50%; margin-top: 5px; }
+
+.section-map-legend .section-map-legend__title { font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; line-height: 1.43; color: #005689; margin-bottom: 4px; }
+
+.section-map-legend .section-map-legend__values ul { display: flex; justify-content: space-between; width: 220px; padding: 0; font-size: 14px; font-weight: 500; line-height: 1.43; color: rgba(0, 86, 137, 0.3); list-style: none; }
+
+.section-map-legend .section-map-legend__title-light { font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; line-height: 1.43; color: #FFFFFF; margin-bottom: 4px; }
+
+.section-map-legend .section-map-legend__values-light ul { display: flex; justify-content: space-between; width: 220px; padding: 0; font-size: 14px; font-weight: 500; line-height: 1.43; color: rgba(255, 255, 255, 0.3); list-style: none; }
 
 .slider { display: none; position: relative; }
 

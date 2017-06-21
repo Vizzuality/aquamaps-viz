@@ -882,7 +882,7 @@
 		.section-map-legend__values ul {
 			display: flex;
 			justify-content: space-between;
-			width: 160px;
+			width: 220px;
 			padding: 0;
 			font-size: 14px;
 			font-weight: 500;
@@ -920,5 +920,55 @@
 				background-color: $brand-primary;
 			}
 		}
+	}
+}
+
+/* section map legend styles */
+
+.section-map-legend {
+	display: inline-block;
+	width: 50%;
+	margin-top: 5px;
+
+	.section-map-legend__title {
+		font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 1.43;
+		color: #005689;
+		margin-bottom: 4px;
+	}
+
+	.section-map-legend__values ul {
+		display: flex;
+		justify-content: space-between;
+		width: 220px;
+		padding: 0;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 1.43;
+		color: rgba(0, 86, 137, 0.3);
+		list-style: none;
+	}
+
+	.section-map-legend__title-light {
+		font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 1.43;
+		color: #FFFFFF;
+		margin-bottom: 4px;
+	}
+
+	.section-map-legend__values-light ul {
+		display: flex;
+		justify-content: space-between;
+		width: 220px;
+		padding: 0;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 1.43;
+		color: rgba(255, 255, 255, 0.3);
+		list-style: none;
 	}
 }
