@@ -165,7 +165,7 @@
                 <div class="section-map-legend pull-right">
                   <div class="section-map-legend__title-light">Relative probabilities of occurrence</div>
                   <div class="section-map-legend__values-light">
-                    <img src="images/legend-colours.svg">
+                    <img src="images/legend-colours-2.svg">
                     <ul>
                       <li>&lt;=0.19</li>
                       <li>0.39</li>
