@@ -167,11 +167,11 @@
                   <div class="section-map-legend__values-light">
                     <img src="images/legend-colours.svg">
                     <ul>
-                      <li>&gt;0.19</li>
+                      <li>&lt;=0.19</li>
                       <li>0.39</li>
                       <li>0.59</li>
                       <li>0.79</li>
-                      <li>&lt;1.0</li>
+                      <li>1.0</li>
                     </ul>
                   </div>
                 </div>
@@ -218,7 +218,7 @@
 	                    <ul class="slides js_slides">
 												<?php foreach ($specie['pictures'] as $pictureId => $picture) :?>
 													<li class="js_slide slide">
-														<div class="c-pic-slide js_pic_slide" data-pic-url="<?= $picture['url'] ?>" data-pic-name="<?= $picture['name'] ?> of <a href='<?= $specie['url'] ?>' target='_blank'><?= $specie['name'] ?></a>" data-id="procedure-2-<?= $specie['key'] ?>-<?= $pictureId ?>" data-legend-title="Relative probabilities of occurrence" data-legend-values="&gt;0.2|0.3|0.5|0.7|&lt;0.8">
+														<div class="c-pic-slide js_pic_slide" data-pic-url="<?= $picture['url'] ?>" data-pic-name="<?= $picture['name'] ?> of <a href='<?= $specie['url'] ?>' target='_blank'><?= $specie['name'] ?></a>" data-id="procedure-2-<?= $specie['key'] ?>-<?= $pictureId ?>" data-legend-title="Relative probabilities of occurrence" data-legend-values="&lt;=0.19|0.39|0.59|0.79|&lt;0.8">
 															<div class="c-pic-slide__picture" style="background-image: url('<?= $picture['url'] ?>')"></div>
 															<div class="c-pic-slide__separator"></div>
 															<div class="c-pic-slide__name"><?= $picture['name'] ?></div>
@@ -341,13 +341,13 @@
                   <div class="section-map-legend">
                     <div class="section-map-legend__title">Relative probabilities of occurrence</div>
                     <div class="section-map-legend__values">
-                      <img src="images/legend-colours.svg">
+                      <img src="images/legend-colours-2.svg">
                       <ul>
-                        <li>&gt;0.2</li>
-                        <li>0.3</li>
-                        <li>0.5</li>
-                        <li>0.7</li>
-                        <li>&lt;0.8</li>
+                        <li>&lt;=0.19</li>
+                        <li>0.39</li>
+                        <li>0.59</li>
+                        <li>0.79</li>
+                        <li>1.0</li>
                       </ul>
                     </div>
                   </div>
@@ -413,13 +413,13 @@
                   <div class="section-map-legend">
                     <div class="section-map-legend__title">Relative probabilities of occurrence</div>
                     <div class="section-map-legend__values">
-                      <img src="images/legend-colours.svg">
+                      <img src="images/legend-colours-2.svg">
                       <ul>
-                        <li>&gt;0.2</li>
-                        <li>0.3</li>
-                        <li>0.5</li>
-                        <li>0.7</li>
-                        <li>&lt;0.8</li>
+                        <li>&lt;=0.19</li>
+                        <li>0.39</li>
+                        <li>0.59</li>
+                        <li>0.79</li>
+                        <li>1.0</li>
                       </ul>
                     </div>
                   </div>
@@ -604,7 +604,7 @@
 							<div class="col-xs-12">
 								<div class="c-show-pic__legend">
 									<div class="c-show-pic__legend-title js_legend_title"></div>
-                  <img src="images/legend-colours.svg">
+                  <img src="images/legend-colours-2.svg">
                   <ul class="c-show-pic__legend-values js_legend_values"></ul>
 								</div>
 							</div>
